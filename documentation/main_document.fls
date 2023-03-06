@@ -1,8 +1,8 @@
-PWD d:/Sync(Server)/RepoGit/DetectYourFaceAI/documentation
+PWD d:/Sync(Server)/RepoGit/GuessUJob/documentation
 INPUT j:/texlive/2022/texmf.cnf
 INPUT j:/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT j:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT d:/Sync(Server)/RepoGit/DetectYourFaceAI/documentation/main_document.tex
+INPUT d:/Sync(Server)/RepoGit/GuessUJob/documentation/main_document.tex
 OUTPUT main_document.log
 INPUT j:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT j:/texlive/2022/texmf-dist/tex/latex/base/article.cls
