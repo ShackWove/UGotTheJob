@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  6 MAR 2023 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  6 MAR 2023 18:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -231,50 +231,235 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen160
 \Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks20
-) (./main_document.aux)
+) (j:/texlive/2022/texmf-dist/tex/latex/pgf-pie/pgf-pie.sty
+Package: pgf-pie 2022/06/14 v0.7 Some LaTeX macros for pie chart by using PGF/Tikz package.
+ (j:/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (j:/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (j:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (j:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (j:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box54
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (j:/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+ (j:/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (j:/texlive/2022/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (j:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks24
+))
+\pgf@x=\dimen164
+\pgf@y=\dimen165
+\pgf@xa=\dimen166
+\pgf@ya=\dimen167
+\pgf@xb=\dimen168
+\pgf@yb=\dimen169
+\pgf@xc=\dimen170
+\pgf@yc=\dimen171
+\pgf@xd=\dimen172
+\pgf@yd=\dimen173
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count279
+\c@pgf@countb=\count280
+\c@pgf@countc=\count281
+\c@pgf@countd=\count282
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count283
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+))) (j:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count284
+\pgfsyssoftpath@bigbuffer@items=\count285
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen174
+\pgfmath@count=\count286
+\pgfmath@box=\box55
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count287
+)) (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen175
+\pgf@picmaxx=\dimen176
+\pgf@picminy=\dimen177
+\pgf@picmaxy=\dimen178
+\pgf@pathminx=\dimen179
+\pgf@pathmaxx=\dimen180
+\pgf@pathminy=\dimen181
+\pgf@pathmaxy=\dimen182
+\pgf@xx=\dimen183
+\pgf@xy=\dimen184
+\pgf@yx=\dimen185
+\pgf@yy=\dimen186
+\pgf@zx=\dimen187
+\pgf@zy=\dimen188
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen189
+\pgf@path@lasty=\dimen190
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen191
+\pgf@shorten@start@additional=\dimen192
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count288
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen193
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen194
+\pgf@pt@y=\dimen195
+\pgf@pt@temp=\dimen196
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen197
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen198
+\pgf@sys@shading@range@num=\count289
+\pgf@shadingcount=\count290
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box59
+)) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (j:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box60
+) (j:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (j:/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen199
+\pgf@nodesepend=\dimen256
+) (j:/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (j:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (j:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (j:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (j:/texlive/2022/texmf-dist/tex/latex/pgf/math/pgfmath.sty (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (j:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen257
+\pgffor@skip=\dimen258
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+)) (j:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count291
+\pgfplotmarksize=\dimen259
+)
+\tikz@lastx=\dimen260
+\tikz@lasty=\dimen261
+\tikz@lastxsaved=\dimen262
+\tikz@lastysaved=\dimen263
+\tikz@lastmovetox=\dimen264
+\tikz@lastmovetoy=\dimen265
+\tikzleveldistance=\dimen266
+\tikzsiblingdistance=\dimen267
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count292
+\tikznumberofchildren=\count293
+\tikznumberofcurrentchild=\count294
+\tikz@fig@count=\count295
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count296
+\pgfmatrixcurrentcolumn=\count297
+\pgf@matrix@numberofcolumns=\count298
+)
+\tikz@expandcount=\count299
+ (j:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (j:/texlive/2022/texmf-dist/tex/latex/pgf-pie/tikzlibrarypie.code.tex (j:/texlive/2022/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+\pgfpie@angleEnd=\dimen268
+\pgfpie@explodeLength=\count300
+\pgfpie@colorLength=\count301
+\pgfpie@sliceLength=\count302
+)) (./main_document.aux)
 \openout1 = `main_document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
  (j:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
-\scratchdimen=\dimen162
-\scratchbox=\box54
-\nofMPsegments=\count280
-\nofMParguments=\count281
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count282
-\MPscratchDim=\dimen163
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count303
+\scratchdimen=\dimen269
+\scratchbox=\box65
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen270
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks34
 ) (j:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (j:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 31.
+Package hyperref Info: Link coloring OFF on input line 36.
  (./main_document.out) (./main_document.out)
-\@outlinefile=\write3
-\openout3 = `main_document.out'.
+\@outlinefile=\write4
+\openout4 = `main_document.out'.
 
 
 *geometry* driver: auto-detecting
@@ -311,29 +496,70 @@ Package hyperref Info: Link coloring OFF on input line 31.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<job_seeking.png, id=28, 385.44pt x 385.44pt>
+<job_seeking.png, id=39, 385.44pt x 385.44pt>
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 35.
+Package pdftex.def Info: job_seeking.png  used on input line 40.
 (pdftex.def)             Requested size: 231.26578pt x 231.26578pt.
-LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 45.
-LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 45.
 
-Underfull \hbox (badness 10000) in alignment at lines 56--56
-[][] 
- []
+LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <18> not available
+(Font)              size <17.28> substituted on input line 49.
 
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <18> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 51.
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/sl' in size <18> not available
+(Font)              size <17.28> substituted on input line 51.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <18> not available
+(Font)              size <17.28> substituted on input line 58.
+
+LaTeX Font Info:    Calculating math sizes for size <18> on input line 64.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18> not available
+(Font)              size <17.28> substituted on input line 64.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.59995> not available
+(Font)              size <12> substituted on input line 64.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <18> not available
+(Font)              size <17.28> substituted on input line 64.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <12.59995> not available
+(Font)              size <12> substituted on input line 64.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <18> not available
+(Font)              size <17.28> substituted on input line 64.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <12.59995> not available
+(Font)              size <12> substituted on input line 64.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <18> on input line 64.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12.59995> on input line 64.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 64.
 [1
 
-{j:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./job_seeking.png>] (./main_document.toc)
-\tf@toc=\write4
-\openout4 = `main_document.toc'.
+{j:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./job_seeking.png>] (./main_document.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
+\tf@toc=\write5
+\openout5 = `main_document.toc'.
 
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 64.
+Package pdftex.def Info: job_seeking.png  used on input line 77.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -342,13 +568,13 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{43.60004pt}.
 
 [2]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 111.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 118.
  (j:/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 119.
+Package pdftex.def Info: job_seeking.png  used on input line 126.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -356,23 +582,56 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 43.60004pt, for example:
 (fancyhdr)                \setlength{\footskip}{43.60004pt}.
 
-[3] (./main_document.aux)
+[3]
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 143.
+<CRISP-DM.png, id=75, 96.36pt x 96.6009pt>
+File: CRISP-DM.png Graphic file (type png)
+<use CRISP-DM.png>
+Package pdftex.def Info: CRISP-DM.png  used on input line 151.
+(pdftex.def)             Requested size: 269.80756pt x 270.4821pt.
+File: job_seeking.png Graphic file (type png)
+<use job_seeking.png>
+Package pdftex.def Info: job_seeking.png  used on input line 157.
+(pdftex.def)             Requested size: 39.99895pt x 40.0pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 43.60004pt, for example:
+(fancyhdr)                \setlength{\footskip}{43.60004pt}.
+
+[4 <./CRISP-DM.png>]
+File: job_seeking.png Graphic file (type png)
+<use job_seeking.png>
+Package pdftex.def Info: job_seeking.png  used on input line 210.
+(pdftex.def)             Requested size: 39.99895pt x 40.0pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 43.60004pt, for example:
+(fancyhdr)                \setlength{\footskip}{43.60004pt}.
+
+[5] (./main_document.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.72pt have occurred.
+
 Package rerunfilecheck Info: File `main_document.out' has not changed.
-(rerunfilecheck)             Checksum: B9053A9BBC19897C22DB52CE6ED2452B;792.
+(rerunfilecheck)             Checksum: FFED2E0E5699142C4C68C43BFA44F95E;1061.
  ) 
 Here is how much of TeX's memory you used:
- 9936 strings out of 475066
- 159863 string characters out of 5782772
- 605518 words of memory out of 5000000
- 31213 multiletter control sequences out of 15000+600000
- 472410 words of font info for 38 fonts, out of 8000000 for 9000
+ 20388 strings out of 475066
+ 389112 string characters out of 5782772
+ 793725 words of memory out of 5000000
+ 41432 multiletter control sequences out of 15000+600000
+ 475748 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,14n,77p,327b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{j:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<j:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on main_document.pdf (3 pages, 66562 bytes).
+ 99i,14n,94p,470b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{j:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<j:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
+Output written on main_document.pdf (5 pages, 199335 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 54 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,5 @@
 \documentclass{article}
+\author{Giulio Incoronato, Antonio Mazzarella}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
@@ -8,8 +9,11 @@
 \newcommand{\mytextbf}[1]{\textbf{\bfseries #1}}
 \usepackage{tabularx}
 \usepackage{geometry}
+\usepackage{pgf-pie}
+
 %variabili globali
 \newcommand{\mainname}{GuessUJob}
+
 
 \geometry{
     a4paper,
@@ -17,6 +21,7 @@
     left=20mm,
     top=20mm,
 }
+
 
 %di seguito imposterò i piè pagina
 \pagestyle{fancy}
@@ -40,20 +45,28 @@
 
     \vspace{0.5cm}
 
-    \textbf{\large Artificial Intelligence DOCUMENT}
+    \fontsize{18}{16}
+    \textbf{Artificial Intelligence DOCUMENT}
 
-    \textit{\large "Dipartimento di Informatica anno 2022/2023"}
+    \textit{"Dipartimento di Informatica anno 2022/2023"}
 
-    \textit{\large "Professore: Fabio Palomba"}
+    \textit{"Professore: Fabio Palomba"}
+
+    \vspace{1.8cm}
+
 
     \begin{table}[ht]
+        \fontsize{18}{12}\selectfont
         \centering
-        \begin{tabularx}{5.5cm}{l | r}
+        \setlength{\arrayrulewidth}{2pt}
+        \setlength{\tabcolsep}{5pt}
+        \def\arraystretch{1.8}
+        \begin{tabular}{ c | c }
             \textbf{Autori}    & \textbf{Matricola} \\
             \hline
             Giulio Incoronato  & 0512111363         \\
             Antonio Mazzarella & 0512112830         \\
-        \end{tabularx}
+        \end{tabular}
     \end{table}
 \end{center}
 
@@ -85,17 +98,11 @@ in modo da prevedere i risultati in base agli input forniti dall'utente.
     \item Qui è dove è stata presa l'immagine: \href{https://www.flaticon.com/free-icon/job-seeking_1503438}{Link}
 \end{enumerate}
 
-\section{Business understanding}
-\subsection{Obiettivi di business}
-L'obiettivo principale di \textbf{\mainname} è la realizzazione di un tool con cui l'utente interagisce inserendo
-dei dati chiesti in partenza sul suo percorso di studi, il tutto verrà analizzato e processato per poi dare in
-output la previsione inerente al percorso di studio in questione. Lo scopo di questo tool sarà anche quello di
-rimanere in un giudizio che non sarà in base al sesso della persona o altri tratti somatici.
+\section{Specifiche P.E.A.S.}
 
-\subsection{PEAS}
 \begin{table}[ht]
     \centering
-    \rowcolors{1}{gray!20!blue!5}{gray!20!blue!15}
+    \rowcolors{1}{gray!5}{gray!15}
     \begin{tabular}{| l | m{8cm} |}
         \hline
         \textbf{Performance} & Capacità dell'agente di prevedere se l'utente sarà preso o meno per un lavoro.                       \\
@@ -115,5 +122,89 @@ L'ambiente possiede le seguenti proprietà:
     \item \textbf{Discreto:} le previsioni dell'agente dipendono soprattutto dagli input inseriti dall'utente, oltretutto c'è un numero limitato e preciso di informazioni che l'utente può inserire.
     \item \textbf{Singolo-agente:} esiste solo un agente che opera nell'ambiente.
 \end{itemize}
+
+\newpage
+
+\section{Machine Learning}
+Il machine learning (apprendimento automatico) è una tecnologia dell'intelligenza artificiale che consente alle macchine di imparare dai dati, senza essere esplicitamente programmate. In altre parole, il machine learning si basa sulla costruzione di algoritmi che possono imparare da un insieme di dati e migliorare la loro capacità di risolvere compiti specifici con l'esperienza.
+
+Ci sono tre tipi principali di apprendimento automatico:
+\begin{itemize}
+    \item \textbf{Apprendimento supervisionato:} in questo tipo di apprendimento, il modello è addestrato su un insieme di dati che includono sia le caratteristiche di input che le relative etichette di output. Il modello usa queste etichette per adattarsi ai dati di input e fare previsioni su dati simili.
+    \item \textbf{Apprendimento non supervisionato:} in questo tipo di apprendimento, il modello è addestrato su un insieme di dati senza etichette di output. Il modello cerca di scoprire pattern o strutture nei dati di input.
+    \item \textbf{Apprendimento per rinforzo:} in questo tipo di apprendimento, il modello impara attraverso l'interazione con un ambiente dinamico. Il modello prende decisioni in base allo stato attuale dell'ambiente e riceve feedback sulle sue azioni.
+\end{itemize}
+
+Il machine learning viene utilizzato in molte applicazioni, tra cui la classificazione di immagini, la traduzione automatica, la diagnosi medica, la rilevazione di frodi e molto altro ancora.
+Per il nostro tool abbiamo utilizzato un algoritmo di machine learning ad apprendimento supervisionato.
+
+\section{CRISP-DM}
+Per progettare una soluzione basata su machine learning bisogna avere un approccio \textbf{data and software engeneering}.
+Per la creazione di tale software abbiamo utilizzato il modello \textit{CRISP-DM} (CRISP-DM è l’acronimo di Cross-Industry Standard Process for Data Mining.),
+che rappresenta il ciclo di vita di progetti basati su intelligenza artificiale e data science.
+
+Possiamo paragonare il modello \textit{CRISP-DM} ad un modello a cascata con feedback utilizzato per lo sviluppo di sistemi software
+tradizionali. Presenta anche un modello \textbf{non sequenziale} in cui le diverse fasi possono essere eseguite un numero illimitato
+di volte. Esistono diverse fasi rappresentate nell'immagine di seguito (Immagine 1):
+
+\begin{center}
+    \includegraphics[scale=2.8]{CRISP-DM.png}
+
+    \textit{Immagine 1}
+\end{center}
+
+
+\newpage
+
+\subsection{Business Understanding}
+In questa fase si raccolgono e definiscono gli obiettivi di Business che si vogliono raggiungere, oltre a determinare
+la disponibilità delle risorse, stimare i rischi, indicare tecnologie e gli strumenti utilizzati per raggiungere gli obiettibi
+prefissati.
+
+\begin{itemize}
+    \item \textbf{Obiettivi di Business:} L'obiettivo principale di \textbf{\mainname} è la realizzazione di un tool con cui l'utente interagisce inserendo
+          dei dati chiesti in partenza sul suo percorso di studi, il tutto verrà analizzato e processato per poi dare in
+          output la previsione inerente al percorso di studio in questione. Lo scopo di questo tool sarà anche quello di
+          rimanere in un giudizio che non sarà in base al sesso della persona o altri tratti somatici.
+
+    \item \textbf{Disponibilità delle risorse:} La risorsa che utilizzeremo per il nostro software sarà un dataset che conterrà
+          le informazioni sui collocamenti in base ai vari percorsi di studio e esperienze pregresse. Per reperire questo dataset utilizzeremo una piattaforma importante che è \href{https://www.kaggle.com/}{Kaggle}.
+
+    \item \textbf{Stima dei rischi:} I rischi che incontreremo saranno di tipo perlopiù Etico/Morale in quanto il dataset non fornisce una bilanciata percentuale di dati tra persone di
+          sesso differente.
+
+    \item \textbf{Tecnologie e Strumenti:} Per analizzare, acquisire e modellare il dataset utilizzeremo il linguaggio \textit{Python} che presenta alcune librerie come \textbf{Pandas}.
+
+\end{itemize}
+
+\subsection{Data Understanding}
+Come già discusso nella \textit{Stima dei rischi (par.4.1 Business Understanding)} il problema da noi riscontrato è stata la poca imparzialità che l'agente potesse avere
+con il dataset da noi utilizzato. Il dataset avendo un discreto bilanciamento dei dati relativi al gender \textit{(vedi Figure 1)}, avrebbe portato al nostro agente una poco
+corretta previsione del piazzamento di una persona, rischiando quindi di cadere in una discriminazione di tipo Etico/Morale di gender.
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \pie{65/Uomini, 35/Donne}
+    \end{tikzpicture}
+    \caption{Gender Dataset}
+    \label{fig:torta}
+\end{figure}
+
+Il dataset inoltre presenta dati presi da un ambiente Americano, il che porta un cattivo adattamento generale dovuto al differente sistema scolastico e di votazione \textit{(vedi Table 1)}.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Voto Americano & Voto Italiano\\
+        \hline
+        Grado A               & 70-110\\
+        Grado B               & 60-70\\
+        Grado C               & 50-60\\
+        ...                   & ...\\
+        \hline
+    \end{tabular}
+    \caption{Esempio di voti}
+\end{table}
 
 \end{document}
