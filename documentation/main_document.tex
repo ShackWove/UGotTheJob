@@ -2,8 +2,21 @@
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
-\usepackage{lipsum}% for some dummy text
+\usepackage{lipsum} %for some dummy text
+\usepackage{array} %per gli array in tabella
+\usepackage[table]{xcolor} %colori della tabella
 \newcommand{\mytextbf}[1]{\textbf{\bfseries #1}}
+\usepackage{tabularx}
+\usepackage{geometry}
+%variabili globali
+\newcommand{\mainname}{GuessUJob}
+
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
 
 %di seguito imposterò i piè pagina
 \pagestyle{fancy}
@@ -11,6 +24,7 @@
 \fancyfoot[L]{\thepage}
 \fancyfoot[R]{\includegraphics[height=40pt]{job_seeking.png}}
 
+%font utilizzato san serif
 \renewcommand{\headrulewidth}{0pt} % rimuovi la linea dell'header
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -18,15 +32,29 @@
 \thispagestyle{empty}
 
 \begin{center}%inizio documento
-    \includegraphics[scale=0.5]{job_seeking.png}
+    \includegraphics[scale=0.6]{job_seeking.png}
 
     \vspace{1cm}
 
-    \textbf{\huge{GuessUJob}} % Aggiunge il titolo
+    \textbf{\huge{\mainname}} % Aggiunge il titolo
 
     \vspace{0.5cm}
 
     \textbf{\large Artificial Intelligence DOCUMENT}
+
+    \textit{\large "Dipartimento di Informatica anno 2022/2023"}
+
+    \textit{\large "Professore: Fabio Palomba"}
+
+    \begin{table}[ht]
+        \centering
+        \begin{tabularx}{5.5cm}{l | r}
+            \textbf{Autori}    & \textbf{Matricola} \\
+            \hline
+            Giulio Incoronato  & 0512111363         \\
+            Antonio Mazzarella & 0512112830         \\
+        \end{tabularx}
+    \end{table}
 \end{center}
 
 \newpage %nuova pagina
@@ -36,6 +64,56 @@
 \newpage
 
 \section{Introduzione}
-\lipsum[3]
+Quante volte hai avuto l'ansia di essere preso o pure no in uno specifico lavoro?
+Quante volte ti sei domandato se fossi giusto tu per quel lavoro? Con la fine del proprio percorso
+di studio ci si pongono tante domande e dubbi se si viene presi in un determinato lavoro oppure no.
+\vspace{0.2cm}
+\par
+Tutto questo sorge perchè dopo diversi anni di studio si vuole avere la sicurezza di essere presi
+in un determinato lavoro, magari il lavoro dei propri sogni. Sarebbe utile avere un tool in grado di
+prevedere, attraverso dei dati, se sarai preso.
+\vspace{0.2cm}
+\par
+Il nostro team mira a combattere tutte queste ansie creando un tool chiamato \textbf{"\mainname"}
+che integrerà algoritmi di machine learning supervisionato che andranno ad analizzare un dataset
+in modo da prevedere i risultati in base agli input forniti dall'utente.
+
+\subsection{Link Utili}
+\begin{enumerate}
+    \item Questo è il link alla repository ufficiale di \textbf{\mainname}: \href{https://github.com/ShackWove/GuessUJob}{Link}
+    \item Questo è il link dove abbiamo preso i dataset usati per l'addestramento: \href{https://www.kaggle.com/datasets/ahsan81/job-placement-dataset}{Link}
+    \item Qui è dove è stata presa l'immagine: \href{https://www.flaticon.com/free-icon/job-seeking_1503438}{Link}
+\end{enumerate}
+
+\section{Business understanding}
+\subsection{Obiettivi di business}
+L'obiettivo principale di \textbf{\mainname} è la realizzazione di un tool con cui l'utente interagisce inserendo
+dei dati chiesti in partenza sul suo percorso di studi, il tutto verrà analizzato e processato per poi dare in
+output la previsione inerente al percorso di studio in questione. Lo scopo di questo tool sarà anche quello di
+rimanere in un giudizio che non sarà in base al sesso della persona o altri tratti somatici.
+
+\subsection{PEAS}
+\begin{table}[ht]
+    \centering
+    \rowcolors{1}{gray!20!blue!5}{gray!20!blue!15}
+    \begin{tabular}{| l | m{8cm} |}
+        \hline
+        \textbf{Performance} & Capacità dell'agente di prevedere se l'utente sarà preso o meno per un lavoro.                       \\
+        \textbf{Enviroment}  & L'ambiente in cui l'agente opera rappresentato da un form di cui l'utente scriverà i dati necessari. \\
+        \textbf{Actuators}   & Interfaccia utente dell'applicazione dove uscirà il valore predetto.                                 \\
+        \textbf{Sensors}     & Form nell'interfaccia utente.                                                                        \\
+        \hline
+    \end{tabular}
+\end{table}
+\subsection{Proprietà dell'Ambiente}
+L'ambiente possiede le seguenti proprietà:
+\begin{itemize}
+    \item \textbf{Completamente osservabile:} l'agente ha accesso completo a tutte le informazioni fornite dall'utente.
+    \item \textbf{Deterministico:} lo stato dell'ambiente dipende dall'azione intrapresa dall'agente.
+    \item \textbf{Sequenziale:} le decisioni dell'agente dipendono dagli input dell'utente.
+    \item \textbf{Statico:} nel momento in cui l'agente sta elaborando la sua previsione l'utente non può modificare il form dato in partenza.
+    \item \textbf{Discreto:} le previsioni dell'agente dipendono soprattutto dagli input inseriti dall'utente, oltretutto c'è un numero limitato e preciso di informazioni che l'utente può inserire.
+    \item \textbf{Singolo-agente:} esiste solo un agente che opera nell'ambiente.
+\end{itemize}
 
 \end{document}
