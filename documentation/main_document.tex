@@ -12,7 +12,7 @@
 \usepackage{pgf-pie}
 
 %variabili globali
-\newcommand{\mainname}{GuessUJob}
+\newcommand{\mainname}{UGotTheJob}
 
 
 \geometry{
@@ -80,12 +80,10 @@
 Quante volte hai avuto l'ansia di essere preso o pure no in uno specifico lavoro?
 Quante volte ti sei domandato se fossi giusto tu per quel lavoro? Con la fine del proprio percorso
 di studio ci si pongono tante domande e dubbi se si viene presi in un determinato lavoro oppure no.
-\vspace{0.2cm}
 \par
 Tutto questo sorge perchè dopo diversi anni di studio si vuole avere la sicurezza di essere presi
 in un determinato lavoro, magari il lavoro dei propri sogni. Sarebbe utile avere un tool in grado di
 prevedere, attraverso dei dati, se sarai preso.
-\vspace{0.2cm}
 \par
 Il nostro team mira a combattere tutte queste ansie creando un tool chiamato \textbf{"\mainname"}
 che integrerà algoritmi di machine learning supervisionato che andranno ad analizzare un dataset
@@ -153,7 +151,6 @@ di volte. Esistono diverse fasi rappresentate nell'immagine di seguito (Immagine
     \textit{Immagine 1}
 \end{center}
 
-
 \newpage
 
 \subsection{Business Understanding}
@@ -196,15 +193,69 @@ Il dataset inoltre presenta dati presi da un ambiente Americano, il che porta un
     \centering
     \begin{tabular}{|c|c|}
         \hline
-        Voto Americano & Voto Italiano\\
+        Voto Americano & Voto Italiano \\
         \hline
-        Grado A               & 70-110\\
-        Grado B               & 60-70\\
-        Grado C               & 50-60\\
-        ...                   & ...\\
+        Grado A        & 70-110        \\
+        Grado B        & 60-70         \\
+        Grado C        & 50-60         \\
+        ...            & ...           \\
         \hline
     \end{tabular}
     \caption{Esempio di voti}
 \end{table}
+
+\newpage
+
+\subsection{Data Preparation}
+In questa sezione, tratteremo le adottate per preparare i dati acquisiti in modo che il nostro machine learner
+non dia problemi.
+
+Il data preparation si articola nei seguenti quattro passaggi:
+
+\begin{enumerate}
+    \item \textbf{Data cleaning;}
+    \item \textbf{Feature scaling;}
+    \item \textbf{Feature selection;}
+    \item \textbf{Data balancing;}
+\end{enumerate}
+
+\subsubsection{Data cleaning}
+Il \textit{Data Cleaning}, definito come \textit{"Pulizia dei dati"}, si occupa di rimediare a problemi quando ci sono righe
+di dati mancanti ma più in generale ha come obiettivo quello di fornire un dataset dotato di una qualità adeguata.
+Nel nostro dataset non sono presenti dati mancanti e di conseguenza non abbiamo effettuato la fase di \textit{Data Imputation}, che
+sarebbe la fase dove si stimano i valori dei dati mancanti. Oltretutto non è stato necessario effettuare una normalizzazione
+sui dati.
+
+\subsubsection{Feature selection}
+Il \textit{Feature selection} rientra nell'ambito del feature engeneering, che sarebbe il processo nel quale il progettista
+utilizza la propria conoscenza del dominio per determinare le caratteristiche (feature) dai dati grezzi estraibile tramite tecniche
+di data mining.
+
+Nel nostro caso abbiamo pensato di rimuovere colonne che non erano adeguate per il nostro obiettivo ovvero, quello di creare
+un software che preveda un piazzamento nel mondo del lavoro quanto più etico possibile e adeguato per studenti che studiano in
+Italia.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        Gender & 10TH * & BESSC  & 12TH * & HSC EX & Subject  & UNDERGRAD & MAJORS    & WorkExp & Aptitude \\
+        \hline
+        M      & 67     & Others & 91     & Others & Commerce & 58        & Sci-Tech  & No      & 55       \\
+        F      & 46     & Others & 49.2   & Others & Commerce & 79        & Comm-Mgmt & No      & 74,28    \\
+        ...    & ...    & ...    & ...    & ...    & ...      & ...       & ...       & ...     & ...      \\
+        \hline
+    \end{tabular}
+    \caption{Esempio di dati}
+\end{table}
+
+La prima colonna che abbiamo eliminato è quella riguardante il \textbf{Gender}, in quanto abbiamo pensato che non convenisse porre dei limiti
+riguardanti il sesso di una persona visto che il dataset in considerazione presentava più istanze con soggetto maschile rispetto a quelle femminili
+e che poteva portare ad un machine learner che descriminasse i vari gender.
+
+Le successive colonne presentavano dati che non erano adeguati in modo universale rispetto tutti i tipi di studio nelle varie lingue
+tra cui, in questo caso, l'Italiano. Il dataset presentava solo voti e riferimenti ai vari studi che riguardavano solo ed esclusivamente
+l'ambito scolastico Americano. Oltretutto la tabella presenta la percentuale di riuscita di un test di ingresso aziendale, che nel nostro caso
+abbiamo ritenuto giusto lasciare poichè solitamente nella maggior parte dei casi è presente.
 
 \end{document}
