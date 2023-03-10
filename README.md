@@ -1,5 +1,5 @@
 <center>
-  <h1><strong>GuessUJob</strong></h1>
+  <h1><strong>UGotTheJob</strong></h1>
 </center>
 
 <p align="center">
