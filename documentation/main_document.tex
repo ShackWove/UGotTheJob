@@ -230,7 +230,7 @@ sui dati.
 \subsubsection{Feature scaling}
 
 \subsubsection{Feature selection}
-Il \textit{Feature selection} rientra nell'ambito del feature engeneering, che sarebbe il processo nel quale il progettista
+La \textit{Feature selection} rientra nell'ambito del feature engeneering, che sarebbe il processo nel quale il progettista
 utilizza la propria conoscenza del dominio per determinare le caratteristiche (feature) dai dati grezzi estraibile tramite tecniche
 di data mining.
 
@@ -238,23 +238,68 @@ Nel nostro caso abbiamo pensato di rimuovere colonne che non erano adeguate per 
 un software che preveda un piazzamento nel mondo del lavoro quanto più etico possibile e adeguato per studenti che studiano in
 Italia.
 
-\begin{table}[ht]
-    \centering
-    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-        \hline
-        Gender & 10TH * & BESSC  & 12TH * & HSC EX & Subject  & UNDERGRAD & MAJORS    & WorkExp & Aptitude \\
-        \hline
-        M      & 67     & Others & 91     & Others & Commerce & 58        & Sci-Tech  & No      & 55       \\
-        F      & 46     & Others & 49.2   & Others & Commerce & 79        & Comm-Mgmt & No      & 74,28    \\
-        ...    & ...    & ...    & ...    & ...    & ...      & ...       & ...       & ...     & ...      \\
-        \hline
-    \end{tabular}
-    \caption{Esempio di dati}
-\end{table}
+\begin{center}
+    \includegraphics[scale=0.46]{csvimage.png}
+    \textit{Table example}
+\end{center}
+
+\begin{center}
+    \includegraphics[scale=0.5]{hscpercentage.png}
+
+    \textit{HSC Percentage}
+
+    \includegraphics[scale=0.5]{sscpercentage.png}
+
+    \textit{SSC Percentage}
+
+    \includegraphics[scale=0.5]{degreepercentage.png}
+
+    \textit{Degree Percentage}
+
+    \includegraphics[scale=0.5]{emptestpercentage.png}
+
+    \textit{EmpTest Percentage}
+
+    \includegraphics[scale=0.5]{mbapercentage.png}
+
+    \textit{MBA Percentage}
+
+    \includegraphics[scale=0.5]{gender.png}
+
+    \textit{Gender}
+
+\end{center}
 
 La prima colonna che abbiamo eliminato è quella riguardante il \textbf{Gender}, in quanto abbiamo pensato che non convenisse porre dei limiti
 riguardanti il sesso di una persona visto che il dataset in considerazione presentava più istanze con soggetto maschile rispetto a quelle femminili
 e che poteva portare ad un machine learner che descriminasse i vari gender.
+
+\begin{center}
+
+    \includegraphics[scale=0.5]{sscboard.png}
+
+    \textit{SSC Board}
+    
+    \includegraphics[scale=0.5]{hscboard.png}
+
+    \textit{HSC Board}
+    
+    \includegraphics[scale=0.5]{hscsubject.png}
+
+    \textit{HSC Subject}
+
+    \includegraphics[scale=0.5]{undergraddegree.png}
+
+    \textit{Undergrad}
+    
+    \includegraphics[scale=0.5]{workexperience.png}
+
+    \textit{WORK EXP}
+    
+    \includegraphics[scale=0.5]{specialisation.png}
+
+    \textit{Specialization}
+\end{center}
 
 Le successive colonne presentavano dati che non erano adeguati in modo universale rispetto tutti i tipi di studio nelle varie lingue
 tra cui, in questo caso, l'Italiano. Il dataset presentava solo voti e riferimenti ai vari studi che riguardavano solo ed esclusivamente
