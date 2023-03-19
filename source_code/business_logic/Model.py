@@ -7,8 +7,8 @@ class Model:
         self.dt : DecisionTreeClassifier() = load ("job_prevision.joblib")
     
     def prediction_model(self, dataframe: pd):
-        prediction = dt.predict(dataframe)
+        prediction = self.dt.predict(dataframe)
         if prediction[0] == "Not Placed":
             return "Non sarai preso"
-        else:
+        elif prediction[0] == "Placed":
             return "Sarai preso"
