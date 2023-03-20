@@ -13,11 +13,13 @@ class Data:
     @classmethod
     def undegree_percentage_convert(cls, degree_percentage):
         if(degree_percentage >= 66 and degree_percentage <= 76):
-            return random.uniform(50, 60)
+            return random.uniform(40, 60)
         elif (degree_percentage >= 76 and degree_percentage <= 86):
             return random.uniform(61, 80)
         elif (degree_percentage >= 86 and degree_percentage <= 96):
             return random.uniform(81, 90)
         elif (degree_percentage >= 96 and degree_percentage <= 110):
             return random.uniform(91, 100)
+        else:
+            return random.uniform(0, 39)
 
