@@ -9,4 +9,7 @@ class Model:
     def prediction_model(self, dataframe: pd):
         prediction = self.dt.predict(dataframe)
         prob = self.dt.predict_proba(dataframe)[:, 1]
-        return "Non sarai preso al " + str(prob[0] * 100) + "%", "Sarai preso al "+ str(100 - (prob[0] *100)) +"%"
+        if prediction[0] == "Placed" :
+            return "Sarai preso al " + str(prob[0] * 100) + "%", "Non sarai preso al "+ str(100 - (prob[0] *100)) +"%"
+        else:
+            return "Sarai preso al " + str(100 - (prob[0] * 100)) + "%", "Non sarai preso al "+ str(prob[0] *100) +"%"
