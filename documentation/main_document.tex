@@ -86,11 +86,10 @@ di studio ci si pongono tante domande e dubbi se si viene presi in un determinat
 \par
 Tutto questo sorge perchè dopo diversi anni di studio si vuole avere la sicurezza di essere presi
 in un determinato lavoro, magari il lavoro dei propri sogni. Sarebbe utile avere un tool in grado di
-prevedere, attraverso dei dati, se sarai preso.
+prevedere, attraverso dei dati, quantà probabilità hai di essere preso.
 \par
 Il nostro team mira a combattere tutte queste ansie creando un tool chiamato \textbf{"\mainname"}
-che integrerà algoritmi di machine learning supervisionato che andranno ad analizzare un dataset
-in modo da prevedere i risultati in base agli input forniti dall'utente.
+che integrerà un modello di machine learning supervisionato che andrà a prevedere la possibità di essere piazzat0-
 
 \subsection{Link Utili}
 \begin{enumerate}
@@ -137,7 +136,7 @@ Ci sono tre tipi principali di apprendimento automatico:
 \end{itemize}
 
 Il machine learning viene utilizzato in molte applicazioni, tra cui la classificazione di immagini, la traduzione automatica, la diagnosi medica, la rilevazione di frodi e molto altro ancora.
-Per il nostro tool abbiamo utilizzato un algoritmo di machine learning ad apprendimento supervisionato.
+Per il nostro tool abbiamo utilizzato un algoritmo di machine learning ad apprendimento supervisionato perché andremo a risolvere un problema di \textbf{classificazione}.
 
 \section{CRISP-DM}
 Per progettare una soluzione basata su machine learning bisogna avere un approccio \textbf{data and software engeneering}.
@@ -146,7 +145,7 @@ che rappresenta il ciclo di vita di progetti basati su intelligenza artificiale 
 
 Possiamo paragonare il modello \textit{CRISP-DM} ad un modello a cascata con feedback utilizzato per lo sviluppo di sistemi software
 tradizionali. Presenta anche un modello \textbf{non sequenziale} in cui le diverse fasi possono essere eseguite un numero illimitato
-di volte. Esistono diverse fasi rappresentate nell'immagine di seguito (Immagine 1):
+di volte. Esistono diverse fasi raffigurate nell'immagine di seguito (Immagine 1):
 
 \begin{center}
     \includegraphics[scale=2.3]{CRISP-DM.png}
@@ -163,9 +162,8 @@ prefissati.
 
 \begin{itemize}
     \item \textbf{Obiettivi di Business:} L'obiettivo principale di \textbf{\mainname} è la realizzazione di un tool con cui l'utente interagisce inserendo
-          dei dati chiesti in partenza sul suo percorso di studi, il tutto verrà analizzato e processato per poi dare in
-          output la previsione inerente al percorso di studio in questione. Lo scopo di questo tool sarà anche quello di
-          rimanere in un giudizio che non sarà in base al sesso della persona o altri tratti somatici.
+          dei dati richiesti in partenza sul suo percorso di studi, il tutto verrà analizzato e processato per poi dare in
+          output la probabilità di essere piazzati o non. 
 
     \item \textbf{Disponibilità delle risorse:} La risorsa che utilizzeremo per il nostro software sarà un dataset che conterrà
           le informazioni sui collocamenti in base ai vari percorsi di studio e esperienze pregresse. Per reperire questo dataset utilizzeremo una piattaforma importante che è \href{https://www.kaggle.com/}{Kaggle}.
@@ -173,7 +171,7 @@ prefissati.
     \item \textbf{Stima dei rischi:} I rischi che incontreremo saranno di tipo perlopiù Etico/Morale in quanto il dataset non fornisce una bilanciata percentuale di dati tra persone di
           sesso differente.
 
-    \item \textbf{Tecnologie e Strumenti:} Per analizzare, acquisire e modellare il dataset utilizzeremo il linguaggio \textit{Python} che presenta alcune librerie come \textbf{Pandas}.
+    \item \textbf{Tecnologie e Strumenti:} Per analizzare, acquisire e modellare il dataset utilizzeremo il linguaggio \textit{Python} che presenta alcune librerie come \textbf{Pandas}, \textbf{sklearn}, \textbf{seaborn} ed etc .
 
 \end{itemize}
 
@@ -190,28 +188,18 @@ corretta previsione del piazzamento di una persona, rischiando quindi di cadere 
     \label{fig:torta}
 \end{figure}
 
-Il dataset inoltre presenta dati presi da un ambiente Americano, il che porta un cattivo adattamento generale dovuto al differente sistema scolastico e di votazione \textit{(vedi Table 1)}.
+Il dataset inoltre presenta dati, come voti o specializzazioni, che non sono inerenti all'ambiente italiano. Possiamo vedere una tabella con le descrizioni delle singole feature presenti:
 
-\begin{table}[ht]
-    \centering
-    \begin{tabular}{|c|c|}
-        \hline
-        Voto Americano & Voto Italiano \\
-        \hline
-        Grado A        & 70-110        \\
-        Grado B        & 60-70         \\
-        Grado C        & 50-60         \\
-        ...            & ...           \\
-        \hline
-    \end{tabular}
-    \caption{Esempio di voti}
-\end{table}
+
+%tabella descrizione feature
+
+Questo ci porta a lavorare per un modello che non potrà essere utilizzato in una realtà italiana.
 
 \newpage
 
 \subsection{Data Preparation}
-In questa sezione, tratteremo le adottate per preparare i dati acquisiti in modo che il nostro machine learner
-non dia problemi.
+In questa sezione, tratteremo le tecniche adottate per preparare i dati acquisiti in modo che il nostro machine learner
+non darà problemi e sarà quanto più efficiente possibile.
 
 Il data preparation si articola nei seguenti quattro passaggi:
 
@@ -226,10 +214,10 @@ Il data preparation si articola nei seguenti quattro passaggi:
 Il \textit{Data Cleaning}, definito come \textit{"Pulizia dei dati"}, si occupa di rimediare a problemi quando ci sono righe
 di dati mancanti ma più in generale ha come obiettivo quello di fornire un dataset dotato di una qualità adeguata.
 Nel nostro dataset non sono presenti dati mancanti e di conseguenza non abbiamo effettuato la fase di \textit{Data Imputation}, che
-sarebbe la fase dove si stimano i valori dei dati mancanti. Oltretutto non è stato necessario effettuare una normalizzazione
 sui dati.
 
 \subsubsection{Feature scaling}
+Il \textit{Feature Scaling}, definito come 
 
 \subsubsection{Feature selection}
 La \textit{Feature selection} rientra nell'ambito del feature engeneering, che sarebbe il processo nel quale il progettista
@@ -299,8 +287,7 @@ Da queste considerazioni abbiamo deciso di rimuoverla.
     \textit{MBA Percentage}
 \end{center}
 
-Come si nota da questo grafico la variabile \textit{MBA Percentage} influisce minimamente nel dataset, perchè non esiste una grande differenza di probabilità di essere presi o non
-in base al valore.
+Come si nota da questo grafico la variabile \textit{MBA Percentage} influisce di poco nel dataset, perchè all'aumentare del valore aumenta leggermente essere presi o non.
 
 Da questa considerazione abbiamo deciso di rimuovere la variabile.
 
@@ -310,9 +297,8 @@ Da questa considerazione abbiamo deciso di rimuovere la variabile.
     \textit{Gender}
 \end{center}
 
-La prima colonna che abbiamo eliminato è quella riguardante il \textbf{Gender}, in quanto abbiamo pensato che non convenisse porre dei limiti
-riguardanti il sesso di una persona visto che il dataset in considerazione presentava più istanze con soggetto maschile rispetto a quelle femminili
-e che poteva portare ad un machine learner che descriminasse i vari gender.
+Come è evidente dal grafico \textit{Gender} influisce notevolmente nel dataset , talmente tanto che il numero di uomini piazzati è maggiore rispetto alle donne in proporzione. Questo influenzerebbe il modello, portandolo anche a dare una previsione discriminatoria per un gender. 
+Alla luce di questo abbiamo deciso di rimuovere la variabile \textit{Gender} così da rendere il modello quanto più imparziare possibile da un punto di vista etico. 
 
 \begin{center}
 
@@ -320,7 +306,7 @@ e che poteva portare ad un machine learner che descriminasse i vari gender.
 
     \textit{SSC Board}
 \end{center}
-Come si può vedere da grafico, la variabile SSC Board influisce discretamente nel dataset, in quanto in base al valore della variabile, non c'è una differenza notevole tra le possibilità di essere preso o non. Quando la variabile ha come valore "Others", abbiamo una probabilità maggiore di essere piazzati rispetto al valore "Central".
+Come si può vedere da grafico, la variabile \textit{SSC Board} influisce discretamente nel dataset, in quanto in base al valore della variabile, non c'è una differenza notevole tra le possibilità di essere preso o non. Quando la variabile ha come valore "Others", abbiamo una probabilità maggiore di essere piazzati rispetto al valore "Central".
 Nonostante questo, abbiamo deciso di non rimuovere la variabile. 
 
 \begin{center}
@@ -328,38 +314,37 @@ Nonostante questo, abbiamo deciso di non rimuovere la variabile.
 
     \textit{HSC Board}
 \end{center}
-Come si può notare dal grafico, la variabile HSC Board influisce notevolmente nel dataset, in quanto in base al valore della variabile, la probabilità di essere piazzato è notevole.
-Da questa considerazione abbiamo deciso di non rimuovere la variabile
+Come si può notare dal grafico, la variabile \textit{HSC Board} influisce notevolmente nel dataset, in quanto in base al valore della variabile, la probabilità di essere piazzato è notevole.
+In conclusione abbiamo deciso di non rimuovere la variabile
 \begin{center}
     \includegraphics[scale=0.5]{hscsubject.png}
 
     \textit{HSC Subject}
 \end{center}
-Come si può vedere dal grafico di sopra, la variabile HSC Subject influisce nel dataset, in quanto in base al valore della variabile, si potrebbe avere più probabilità di essere presi o non.
+Come si può vedere dal grafico di sopra, la variabile \textit{HSC Subject} influisce nel dataset, in quanto in base al valore della variabile, si potrebbe avere più possibilità di essere presi o non. In questo caso il valore "Commerce" aumenterebbe le possibilità di essere presi per una persona che ha studiato i questo campo
 Da questa considerazione abbiamo deciso di non rimuoverla
 \begin{center}
     \includegraphics[scale=0.5]{undergraddegree.png}
 
     \textit{Undergrad}
 \end{center}
-Come si può vedere dal grafico di sopra, la variabile Undergrade_degree influisce nel dataset, in quanto in base al valore della variabile, si avrà una probabilità maggiore di essere presi o non.
-Da queste considerazione abbiamo deciso di non rimuovere la variabile.
+Come si può vedere dal grafico di sopra, la variabile \textit{Undergrade_degree} influisce nel dataset, in quanto in base al valore della variabile, si avrà una probabilità maggiore di essere presi o non. Si può notare infatti che le persone che si sono laureate nel campo "Comm&Mgmt" hanno più possibilità di essere presi.
+Da questa analisi abbiamo deciso di non rimuovere la variabile.
 \begin{center}
     \includegraphics[scale=0.5]{workexperience.png}
 
-    \textit{WORK EXP}
+    \textit{Work Experience}
 \end{center}
-Come si può vedere da questo grafico 
+Come si può vedere da questo grafico, la variabile \textit{Work_experience} influisce nel dataset. Chi non ha esperienze lavorative, ha più possibilità di essere preso rispetto a chi ne ha.
+In conclusione abbiamo deciso di non rimuoverla
 \begin{center}
     \includegraphics[scale=0.5]{specialisation.png}
 
-    \textit{Specialization}
+    \textit{Specialisation}
 \end{center}
+In questo grafico la variabile \textit{Specialisation} influisce nel dataset. Chi ha un certo tipo di specializzazione, come "Mkt&Fin", ha più possibilità di essere preso.
+In conclusione abbiamo deciso di non rimuovere la variabile
 
-Le successive colonne presentavano dati che non erano adeguati in modo universale rispetto tutti i tipi di studio nelle varie lingue
-tra cui, in questo caso, l'Italiano. Il dataset presentava solo voti e riferimenti ai vari studi che riguardavano solo ed esclusivamente
-l'ambito scolastico Americano. Oltretutto la tabella presenta la percentuale di riuscita di un test di ingresso aziendale, che nel nostro caso
-abbiamo ritenuto giusto lasciare poichè solitamente nella maggior parte dei casi è presente.
 % aggiungeremo una subsubsubsection dove si parla di etica
 
 \subsubsection{Data balancing}
