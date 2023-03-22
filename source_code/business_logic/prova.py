@@ -7,12 +7,12 @@ model = Model()
 i = 0
 while i < 10:
     i += 1
-    ssc_percentage = random.uniform(0, 100)
+    ssc_percentage = random.uniform(50, 100)
     ssc_board = random.randint(0, 1)
-    hsc_percentage = random.uniform(0, 100)#float(input("hsc_percentage: "))
+    hsc_percentage = random.uniform(50, 100)#float(input("hsc_percentage: "))
     hsc_board = random.randint(0, 1)
     hsc_subject = random.randint(0, 2) #float(input("hsc_subject: "))
-    degree_percentage = random.uniform(0, 100) #float(input("degree_percentage: "))
+    degree_percentage = random.uniform(50, 100) #float(input("degree_percentage: "))
     undergrad_degree = random.randint(0, 2)#float(input("undergrad_degree: "))
     work_experience = random.randint(0, 1)#float(input("work_experience: "))
     #emp_test_percentage = float(input("emp_test_percentage: "))
@@ -27,6 +27,6 @@ while i < 10:
     print(work_experience)
     #print(emp_test_percentage)
     print(specialisation)
-    data = Data().prepare_data(ssc_percentage, ssc_board, hsc_percentage, hsc_board, hsc_subject, degree_percentage, undergrad_degree, work_experience, specialisation)
+    data = Data.prepare_data(ssc_percentage, ssc_board, hsc_percentage, hsc_board, hsc_subject, degree_percentage, undergrad_degree, work_experience, specialisation)
     print(model.prediction_model(data))
     print("\n\n")

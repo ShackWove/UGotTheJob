@@ -8,7 +8,6 @@ class Model:
     
     def prediction_model(self, dataframe: pd):
         prediction = self.dt.predict(dataframe)
-        
         if prediction[0] == "Placed" :
             prob = self.dt.predict_proba(dataframe)[:, 1]
             return "Sarai preso al " + str(prob[0] * 100) +"%"
