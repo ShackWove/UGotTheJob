@@ -8,6 +8,7 @@ import os
 from PIL import Image
 from business_logic.Data import Data
 from business_logic.Model import Model
+import webbrowser as web
 #import time
 
 # TODO Provare a rendere tutto con anche la progress bar
@@ -45,11 +46,17 @@ class gui_ai(customtkinter.CTk):
         
         # icon path
         icon_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), ("../../documentation"))
-        logo_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), ("/logos"))
+        logo_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), ("../view/logos"))
         
         # icon implementation path
         self.logo_icon = customtkinter.CTkImage(Image.open(os.path.join(icon_path, "job_seeking.png")), size=(100, 100))
         self.search_logo = customtkinter.CTkImage(Image.open(os.path.join(icon_path, "search_light.png")), size=(30, 30))
+        
+        # icon preso o meno
+        self.smiley_face = customtkinter.CTkImage(Image.open(os.path.join(logo_path, "smile.png")), size=(250, 250))
+        self.poker_face = customtkinter.CTkImage(Image.open(os.path.join(logo_path, "poker_face.png")), size=(250, 250))
+        self.worry_face = customtkinter.CTkImage(Image.open(os.path.join(logo_path, "dont_worry_child.png")), size=(250, 250))
+        self.profile_git = customtkinter.CTkImage(Image.open(os.path.join(logo_path, "profile_light.png")), size=(30, 30))
         
         # main font and dim
         main_font = customtkinter.CTkFont(size=18)
@@ -58,53 +65,69 @@ class gui_ai(customtkinter.CTk):
             top_font = customtkinter.CTkFont(size=15)
             bold_font = customtkinter.CTkFont(size=16, weight="bold")
             
-            var1 = float(self.ssc_percentage.get())
+            var1 = self.ssc_percentage.get()
+            if var1 == '':
+                var1 = float(0)
             
+            var1_real = float(var1) 
+
+            var2_real = self.ssc_board.get()
+            if var2_real == 'Others':
+                var2_real = int(1)
+            else:
+                var2_real = int(0)
             var2 = self.ssc_board.get()
-            if var2 == 'Others':
-                var2 = int(1)
-            else:
-                var2 = int(0)
-                 
-            var3 = float(self.hsc_percentage.get())
-            
-            var4 = self.hsc_subject.get()
-            if var4 == 'Others':
-                var4 = int(1)
-            else:
-                var4 = int(0)
-                    
-            var5 = self.button_subject.get()
-            if var5 == 'Commerce':
-                var5 = int(1)
-            if var5 == 'Science':
-                var5 = int(2)
-            else:
-                var5 = int(0)
-            
-            var6 = float(self.degree_entry.get())
-            
-            var7 = self.button_subject_laurea.get()
-            # ["Sci&tech", "Comm&Mgmt", "Others"]
-            if var7 == 'Sci&tech':
-                var7 = int(2)
-            if var7 == 'Others':
-                var7 = int(1)
-            else:
-                var7 = int(0)
                 
-            var8 = self.button_subject_work.get()
-            if var8 == 'Si':
-                var8 = int(1)
-            else:
-                var8 = int(0)
+            var3 = self.hsc_percentage.get()
+            if var3 == '':
+                var3 = float(0)
+            var3_real = float(var3) 
             
-            var9 = self.button_subject_specialization.get()
-            # ["Mkt&HumanR","Mkt&Finance"]
-            if var9 == 'Mkt&HumanR':
-                var9 = int(1)
+            var4_real = self.hsc_subject.get()
+            if var4_real == 'Others':
+                var4_real = int(1)
             else:
-                var9 = int(0)
+                var4_real = int(0)
+            var4 = self.hsc_subject.get()
+                    
+            var5_real = self.button_subject.get()
+            if var5_real == 'Commerce':
+                var5_real = int(1)
+            if var5_real == 'Science':
+                var5_real = int(2)
+            else:
+                var5_real = int(0)
+            var5 = self.button_subject.get()
+            
+            var6 = self.degree_entry.get()
+            if var6 == '':
+                var6 = float(0)
+            var6_real = float(var6)
+            
+            var7_real = self.button_subject_laurea.get()
+            # ["Sci&tech", "Comm&Mgmt", "Others"]
+            if var7_real == 'Sci&tech':
+                var7_real = int(2)
+            if var7_real == 'Others':
+                var7_real = int(1)
+            else:
+                var7_real = int(0)
+            var7 = self.button_subject_laurea.get()
+                
+            var8_real = self.button_subject_work.get()
+            if var8_real == 'Si':
+                var8_real = int(1)
+            else:
+                var8_real = int(0)
+            var8 = self.button_subject_work.get()
+            
+            var9_real = self.button_subject_specialization.get()
+            # ["Mkt&HumanR","Mkt&Finance"]
+            if var9_real == 'Mkt&HumanR':
+                var9_real = int(1)
+            else:
+                var9_real = int(0)
+            var9 = self.button_subject_specialization.get()
             
             var_label_1 = "SSC %: "
             var_label_2 = "SSC board: "
@@ -116,8 +139,8 @@ class gui_ai(customtkinter.CTk):
             var_label_8 = "Work ExP: "
             var_label_9 = "Specialization: "
             
-            print(var1, var2, var3, var4, var5, var6, var7, var8, var9)
-            print(type(var1), type(var2), type(var3), type(var4), type(var5), type(var6), type(var7), type(var8), type(var9))
+            print(var1_real, var2_real, var3_real, var4_real, var5_real, var6_real, var7_real, var8_real, var9_real)
+            print(type(var1_real), type(var2_real), type(var3_real), type(var4_real), type(var5_real), type(var6_real), type(var7_real), type(var8_real), type(var9_real))
             
             top_research_window = customtkinter.CTkToplevel()
             top_research_window.geometry(f"700x800")
@@ -233,9 +256,21 @@ class gui_ai(customtkinter.CTk):
             
             #tread = threading.Thread(target=action.start_scan())
             #tread.start()
-            data = Data.prepare_data(var1, var2, var3, var4, var5, var6, var7, var8, var9)
-            print(Model().prediction_model(data))
+            data = Data.prepare_data(var1_real, var2_real, var3_real, var4_real, var5_real, var6_real, var7_real, var8_real, var9_real)
+            data_researched = Model().prediction_model(data)
+            print(data_researched)
             print("\n\n")
+            
+            
+            if data_researched.startswith("Sarai preso"):
+                smile_label = customtkinter.CTkLabel(self.frame_resec, text=data_researched, image=self.smiley_face,
+                                                     compound="top", font=bold_font)
+                smile_label.grid(row=2, sticky="nsew", padx=10, pady=10)
+            else:
+                poker_label = customtkinter.CTkLabel(self.frame_resec, text=data_researched, image=self.worry_face,
+                                    compound="top", font=bold_font)
+                poker_label.grid(row=2, sticky="nsew", padx=10, pady=10)
+                
 
         
         self.main_frame = customtkinter.CTkFrame(self, fg_color="transparent")
@@ -347,10 +382,21 @@ class gui_ai(customtkinter.CTk):
                                                                               values=["Mkt&HumanR","Mkt&Finance"], font=main_font, variable=self.button_var_specialization)
         self.button_subject_specialization.grid(row=0, column=1, sticky="nsew", pady=10, padx=10)
         
-        self.scan_button = customtkinter.CTkButton(master=self.main_frame, text="Ricerca ", image=self.search_logo,
+        # scan frame
+        self.scan_frame = customtkinter.CTkFrame(self.main_frame, fg_color="transparent")
+        self.scan_frame.grid(row=3, column=0, sticky="nsew", pady=10)
+        
+        self.scan_button = customtkinter.CTkButton(master=self.scan_frame, text="Ricerca ", image=self.search_logo,
                                                        compound="right", command=top_research,
                                                        font=customtkinter.CTkFont(size=30, weight="bold"))
-        self.scan_button.grid(row=3, column=0, sticky="ns")
+        self.scan_button.grid(row=0, column=0, sticky="nsew", padx=250)
+        
+        self.git_frame = customtkinter.CTkFrame(self.main_frame, fg_color="transparent")
+        self.git_frame.grid(row=4, column=0, sticky="nsew", pady=10)
+        
+        self.git_button = customtkinter.CTkButton(master=self.git_frame, text="Github ", image=self.profile_git, compound="right", command=lambda: web.open("https://github.com/ShackWove/UGotTheJob", new=2),
+                                                  font=main_font)
+        self.git_button.grid(row=0, column=0, sticky="nsew", padx=263)
         
 if __name__ == "__main__":
     
