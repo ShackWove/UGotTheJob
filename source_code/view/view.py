@@ -234,7 +234,7 @@ class gui_ai(customtkinter.CTk):
             #tread = threading.Thread(target=action.start_scan())
             #tread.start()
             data = Data.prepare_data(var1, var2, var3, var4, var5, var6, var7, var8, var9)
-            print(Model.prediction_model(data))
+            print(Model().prediction_model(data))
             print("\n\n")
 
         

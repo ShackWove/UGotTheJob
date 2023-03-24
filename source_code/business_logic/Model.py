@@ -4,7 +4,7 @@ from joblib import load
 
 class Model:
     def __init__(self):
-        self.dt : RandomForestClassifier() = load ("job_prevision.joblib")
+        self.dt : RandomForestClassifier() = load ("../../job_prevision.joblib")
     
     def prediction_model(self, dataframe: pd):
         prediction = self.dt.predict(dataframe)
