@@ -58,15 +58,53 @@ class gui_ai(customtkinter.CTk):
             top_font = customtkinter.CTkFont(size=15)
             bold_font = customtkinter.CTkFont(size=16, weight="bold")
             
-            var1 = self.ssc_percentage.get()
+            var1 = float(self.ssc_percentage.get())
+            
             var2 = self.ssc_board.get()
-            var3 = self.hsc_percentage.get()
+            if var2 == 'Others':
+                var2 = int(1)
+            else:
+                var2 = int(0)
+                 
+            var3 = float(self.hsc_percentage.get())
+            
             var4 = self.hsc_subject.get()
+            if var4 == 'Others':
+                var4 = int(1)
+            else:
+                var4 = int(0)
+                    
             var5 = self.button_subject.get()
-            var6 = self.degree_entry.get()
+            if var5 == 'Commerce':
+                var5 = int(1)
+            if var5 == 'Science':
+                var5 = int(2)
+            else:
+                var5 = int(0)
+            
+            var6 = float(self.degree_entry.get())
+            
             var7 = self.button_subject_laurea.get()
+            # ["Sci&tech", "Comm&Mgmt", "Others"]
+            if var7 == 'Sci&tech':
+                var7 = int(2)
+            if var7 == 'Others':
+                var7 = int(1)
+            else:
+                var7 = int(0)
+                
             var8 = self.button_subject_work.get()
+            if var8 == 'Si':
+                var8 = int(1)
+            else:
+                var8 = int(0)
+            
             var9 = self.button_subject_specialization.get()
+            # ["Mkt&HumanR","Mkt&Finance"]
+            if var9 == 'Mkt&HumanR':
+                var9 = int(1)
+            else:
+                var9 = int(0)
             
             var_label_1 = "SSC %: "
             var_label_2 = "SSC board: "
@@ -79,6 +117,7 @@ class gui_ai(customtkinter.CTk):
             var_label_9 = "Specialization: "
             
             print(var1, var2, var3, var4, var5, var6, var7, var8, var9)
+            print(type(var1), type(var2), type(var3), type(var4), type(var5), type(var6), type(var7), type(var8), type(var9))
             
             top_research_window = customtkinter.CTkToplevel()
             top_research_window.geometry(f"700x800")
@@ -261,7 +300,7 @@ class gui_ai(customtkinter.CTk):
         self.subject_label.grid(row=0, column=0, sticky="nsew", pady=10)
         
         self.button_var_subject = customtkinter.StringVar(value="Commerce")
-        self.button_subject = customtkinter.CTkSegmentedButton(master=self.subject_frame, values=["Commerce", "Science", "Other"], font=main_font, variable=self.button_var_subject)
+        self.button_subject = customtkinter.CTkSegmentedButton(master=self.subject_frame, values=["Commerce", "Science", "Arts"], font=main_font, variable=self.button_var_subject)
         self.button_subject.grid(row=0, column=1, sticky="nsew", pady=10, padx=10)
         
         # laurea degree
