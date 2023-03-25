@@ -42,15 +42,14 @@ class gui_ai(customtkinter.CTk):
         self.geometry(f"700x800")
         self.rowconfigure(0, weight=1)
         self.columnconfigure(0, weight=4)
-        self.resizable(False, False)
+        self.resizable(False, True)
         
         # icon path
-        icon_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), ("../../documentation"))
         logo_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), ("../view/logos"))
         
         # icon implementation path
-        self.logo_icon = customtkinter.CTkImage(Image.open(os.path.join(icon_path, "job_seeking.png")), size=(100, 100))
-        self.search_logo = customtkinter.CTkImage(Image.open(os.path.join(icon_path, "search_light.png")), size=(30, 30))
+        self.logo_icon = customtkinter.CTkImage(Image.open(os.path.join(logo_path, "job_seeking.png")), size=(100, 100))
+        self.search_logo = customtkinter.CTkImage(Image.open(os.path.join(logo_path, "search_light.png")), size=(30, 30))
         
         # icon preso o meno
         self.smiley_face = customtkinter.CTkImage(Image.open(os.path.join(logo_path, "smile.png")), size=(250, 250))
@@ -143,7 +142,7 @@ class gui_ai(customtkinter.CTk):
             print(type(var1_real), type(var2_real), type(var3_real), type(var4_real), type(var5_real), type(var6_real), type(var7_real), type(var8_real), type(var9_real))
             
             top_research_window = customtkinter.CTkToplevel()
-            top_research_window.geometry(f"700x800")
+            top_research_window.geometry(f"700x600")
             top_research_window.title("Scan profile")
             
             self.frame_resec = customtkinter.CTkFrame(top_research_window, fg_color="transparent")

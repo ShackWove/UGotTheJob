@@ -6,8 +6,10 @@
 \contentsline {section}{\numberline {4}CRISP-DM}{4}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Business Understanding}{5}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Data Understanding}{5}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Data Preparation}{6}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Data cleaning}{6}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Feature scaling}{6}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Feature selection}{6}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Data balancing}{10}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3}Data Preparation}{7}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Data cleaning}{7}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Feature scaling}{7}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Feature selection}{7}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Data balancing}{12}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}Modelling}{12}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Evaluation}{12}{subsection.4.5}%

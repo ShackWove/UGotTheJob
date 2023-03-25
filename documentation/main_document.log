@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  24 MAR 2023 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  25 MAR 2023 01:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,7 +508,7 @@ Package hyperref Info: Link coloring OFF on input line 39.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<job_seeking.png, id=59, 385.44pt x 385.44pt>
+<job_seeking.png, id=67, 385.44pt x 385.44pt>
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
 Package pdftex.def Info: job_seeking.png  used on input line 43.
@@ -556,13 +556,13 @@ Package fancyhdr Warning: \footskip is too small (43.60004pt):
 (fancyhdr)                \setlength{\footskip}{44.35004pt}.
 
 [2]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 118.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 119.
  (j:/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 126.
+Package pdftex.def Info: job_seeking.png  used on input line 127.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -571,14 +571,14 @@ Package fancyhdr Warning: \footskip is too small (43.60004pt):
 (fancyhdr)                \setlength{\footskip}{44.35004pt}.
 
 [3]
-<CRISP-DM.png, id=103, 96.36pt x 96.6009pt>
+<CRISP-DM.png, id=114, 96.36pt x 96.6009pt>
 File: CRISP-DM.png Graphic file (type png)
 <use CRISP-DM.png>
-Package pdftex.def Info: CRISP-DM.png  used on input line 151.
+Package pdftex.def Info: CRISP-DM.png  used on input line 152.
 (pdftex.def)             Requested size: 202.35603pt x 202.86194pt.
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 156.
+Package pdftex.def Info: job_seeking.png  used on input line 157.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -589,7 +589,7 @@ Package fancyhdr Warning: \footskip is too small (43.60004pt):
 [4 <./CRISP-DM.png>]
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 198.
+Package pdftex.def Info: job_seeking.png  used on input line 200.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -598,19 +598,30 @@ Package fancyhdr Warning: \footskip is too small (43.60004pt):
 (fancyhdr)                \setlength{\footskip}{44.35004pt}.
 
 [5]
-<csvimage.png, id=116, 1048.66782pt x 144.54pt>
+File: job_seeking.png Graphic file (type png)
+<use job_seeking.png>
+Package pdftex.def Info: job_seeking.png  used on input line 214.
+(pdftex.def)             Requested size: 39.99895pt x 40.0pt.
+
+
+Package fancyhdr Warning: \footskip is too small (43.60004pt): 
+(fancyhdr)                Make it at least 44.35004pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.35004pt}.
+
+[6]
+<csvimage.png, id=131, 1048.66782pt x 144.54pt>
 File: csvimage.png Graphic file (type png)
 <use csvimage.png>
-Package pdftex.def Info: csvimage.png  used on input line 232.
+Package pdftex.def Info: csvimage.png  used on input line 250.
 (pdftex.def)             Requested size: 482.39305pt x 66.4892pt.
-<hscpercentage.png, id=117, 422.0568pt x 312.9291pt>
+<hscpercentage.png, id=132, 422.0568pt x 312.9291pt>
 File: hscpercentage.png Graphic file (type png)
 <use hscpercentage.png>
-Package pdftex.def Info: hscpercentage.png  used on input line 241.
+Package pdftex.def Info: hscpercentage.png  used on input line 259.
 (pdftex.def)             Requested size: 211.02788pt x 156.46416pt.
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 248.
+Package pdftex.def Info: job_seeking.png  used on input line 261.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -618,25 +629,25 @@ Package fancyhdr Warning: \footskip is too small (43.60004pt):
 (fancyhdr)                Make it at least 44.35004pt, for example:
 (fancyhdr)                \setlength{\footskip}{44.35004pt}.
 
-[6 <./csvimage.png> <./hscpercentage.png>]
-<sscpercentage.png, id=128, 422.0568pt x 312.2064pt>
+[7 <./csvimage.png>]
+<sscpercentage.png, id=143, 422.0568pt x 312.2064pt>
 File: sscpercentage.png Graphic file (type png)
 <use sscpercentage.png>
-Package pdftex.def Info: sscpercentage.png  used on input line 252.
+Package pdftex.def Info: sscpercentage.png  used on input line 270.
 (pdftex.def)             Requested size: 211.02788pt x 156.10281pt.
-<degreepercentage.png, id=129, 419.8887pt x 312.9291pt>
+<degreepercentage.png, id=144, 419.8887pt x 312.9291pt>
 File: degreepercentage.png Graphic file (type png)
 <use degreepercentage.png>
-Package pdftex.def Info: degreepercentage.png  used on input line 263.
+Package pdftex.def Info: degreepercentage.png  used on input line 281.
 (pdftex.def)             Requested size: 209.94383pt x 156.46416pt.
-<emptestpercentage.png, id=130, 422.0568pt x 312.2064pt>
+<emptestpercentage.png, id=145, 422.0568pt x 312.2064pt>
 File: emptestpercentage.png Graphic file (type png)
 <use emptestpercentage.png>
-Package pdftex.def Info: emptestpercentage.png  used on input line 274.
+Package pdftex.def Info: emptestpercentage.png  used on input line 292.
 (pdftex.def)             Requested size: 211.02788pt x 156.10281pt.
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 282.
+Package pdftex.def Info: job_seeking.png  used on input line 294.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -644,25 +655,25 @@ Package fancyhdr Warning: \footskip is too small (43.60004pt):
 (fancyhdr)                Make it at least 44.35004pt, for example:
 (fancyhdr)                \setlength{\footskip}{44.35004pt}.
 
-[7 <./sscpercentage.png> <./degreepercentage.png> <./emptestpercentage.png>]
-<mbapercentage.png, id=139, 422.0568pt x 312.9291pt>
+[8 <./hscpercentage.png> <./sscpercentage.png> <./degreepercentage.png>]
+<mbapercentage.png, id=153, 422.0568pt x 312.9291pt>
 File: mbapercentage.png Graphic file (type png)
 <use mbapercentage.png>
-Package pdftex.def Info: mbapercentage.png  used on input line 285.
+Package pdftex.def Info: mbapercentage.png  used on input line 303.
 (pdftex.def)             Requested size: 211.02788pt x 156.46416pt.
-<gender.png, id=140, 412.6617pt x 312.2064pt>
+<gender.png, id=154, 412.6617pt x 312.2064pt>
 File: gender.png Graphic file (type png)
 <use gender.png>
-Package pdftex.def Info: gender.png  used on input line 295.
+Package pdftex.def Info: gender.png  used on input line 313.
 (pdftex.def)             Requested size: 206.33034pt x 156.10281pt.
-<sscboard.png, id=141, 406.1574pt x 312.9291pt>
+<sscboard.png, id=155, 406.1574pt x 312.9291pt>
 File: sscboard.png Graphic file (type png)
 <use sscboard.png>
-Package pdftex.def Info: sscboard.png  used on input line 305.
+Package pdftex.def Info: sscboard.png  used on input line 323.
 (pdftex.def)             Requested size: 203.0782pt x 156.46416pt.
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 311.
+Package pdftex.def Info: job_seeking.png  used on input line 325.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -670,25 +681,25 @@ Package fancyhdr Warning: \footskip is too small (43.60004pt):
 (fancyhdr)                Make it at least 44.35004pt, for example:
 (fancyhdr)                \setlength{\footskip}{44.35004pt}.
 
-[8 <./mbapercentage.png> <./gender.png> <./sscboard.png>]
-<hscboard.png, id=149, 406.1574pt x 312.9291pt>
+[9 <./emptestpercentage.png> <./mbapercentage.png> <./gender.png>]
+<hscboard.png, id=164, 406.1574pt x 312.9291pt>
 File: hscboard.png Graphic file (type png)
 <use hscboard.png>
-Package pdftex.def Info: hscboard.png  used on input line 313.
+Package pdftex.def Info: hscboard.png  used on input line 331.
 (pdftex.def)             Requested size: 203.0782pt x 156.46416pt.
-<hscsubject.png, id=150, 406.1574pt x 312.9291pt>
+<hscsubject.png, id=165, 406.1574pt x 312.9291pt>
 File: hscsubject.png Graphic file (type png)
 <use hscsubject.png>
-Package pdftex.def Info: hscsubject.png  used on input line 320.
+Package pdftex.def Info: hscsubject.png  used on input line 338.
 (pdftex.def)             Requested size: 203.0782pt x 156.46416pt.
-<undergraddegree.png, id=151, 412.6617pt x 312.9291pt>
+<undergraddegree.png, id=166, 412.6617pt x 312.9291pt>
 File: undergraddegree.png Graphic file (type png)
 <use undergraddegree.png>
-Package pdftex.def Info: undergraddegree.png  used on input line 327.
+Package pdftex.def Info: undergraddegree.png  used on input line 345.
 (pdftex.def)             Requested size: 206.33034pt x 156.46416pt.
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 333.
+Package pdftex.def Info: job_seeking.png  used on input line 347.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -696,20 +707,20 @@ Package fancyhdr Warning: \footskip is too small (43.60004pt):
 (fancyhdr)                Make it at least 44.35004pt, for example:
 (fancyhdr)                \setlength{\footskip}{44.35004pt}.
 
-[9 <./hscboard.png> <./hscsubject.png> <./undergraddegree.png>]
-<workexperience.png, id=159, 406.1574pt x 312.9291pt>
+[10 <./sscboard.png> <./hscboard.png> <./hscsubject.png>]
+<workexperience.png, id=174, 406.1574pt x 312.9291pt>
 File: workexperience.png Graphic file (type png)
 <use workexperience.png>
-Package pdftex.def Info: workexperience.png  used on input line 334.
+Package pdftex.def Info: workexperience.png  used on input line 352.
 (pdftex.def)             Requested size: 203.0782pt x 156.46416pt.
-<specialisation.png, id=160, 406.1574pt x 312.2064pt>
+<specialisation.png, id=175, 406.1574pt x 312.2064pt>
 File: specialisation.png Graphic file (type png)
 <use specialisation.png>
-Package pdftex.def Info: specialisation.png  used on input line 341.
+Package pdftex.def Info: specialisation.png  used on input line 359.
 (pdftex.def)             Requested size: 203.0782pt x 156.10281pt.
 File: job_seeking.png Graphic file (type png)
 <use job_seeking.png>
-Package pdftex.def Info: job_seeking.png  used on input line 352.
+Package pdftex.def Info: job_seeking.png  used on input line 370.
 (pdftex.def)             Requested size: 39.99895pt x 40.0pt.
 
 
@@ -717,27 +728,48 @@ Package fancyhdr Warning: \footskip is too small (43.60004pt):
 (fancyhdr)                Make it at least 44.35004pt, for example:
 (fancyhdr)                \setlength{\footskip}{44.35004pt}.
 
-[10 <./workexperience.png> <./specialisation.png>] (./main_document.aux)
+[11 <./undergraddegree.png> <./workexperience.png> <./specialisation.png>]
+<istance_1.png, id=183, 412.6617pt x 312.2064pt>
+File: istance_1.png Graphic file (type png)
+<use istance_1.png>
+Package pdftex.def Info: istance_1.png  used on input line 375.
+(pdftex.def)             Requested size: 247.59892pt x 187.32529pt.
+<istance_2.png, id=184, 412.6617pt x 312.2064pt>
+File: istance_2.png Graphic file (type png)
+<use istance_2.png>
+Package pdftex.def Info: istance_2.png  used on input line 387.
+(pdftex.def)             Requested size: 247.59892pt x 187.32529pt.
+File: job_seeking.png Graphic file (type png)
+<use job_seeking.png>
+Package pdftex.def Info: job_seeking.png  used on input line 398.
+(pdftex.def)             Requested size: 39.99895pt x 40.0pt.
+
+
+Package fancyhdr Warning: \footskip is too small (43.60004pt): 
+(fancyhdr)                Make it at least 44.35004pt, for example:
+(fancyhdr)                \setlength{\footskip}{44.35004pt}.
+
+[12 <./istance_1.png> <./istance_2.png>] (./main_document.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `main_document.out' has not changed.
-(rerunfilecheck)             Checksum: 2D00E32618EDF742CEE5351331DFEAEE;1780.
+(rerunfilecheck)             Checksum: 15448C192533998F0DD4D381AF40A9A2;1991.
  ) 
 Here is how much of TeX's memory you used:
- 20773 strings out of 475066
- 394901 string characters out of 5782772
- 794929 words of memory out of 5000000
- 41774 multiletter control sequences out of 15000+600000
+ 20794 strings out of 475066
+ 395226 string characters out of 5782772
+ 794923 words of memory out of 5000000
+ 41788 multiletter control sequences out of 15000+600000
  481050 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,15n,94p,488b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,15n,94p,537b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {j:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{j:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1728.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1728.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><j:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb>
-Output written on main_document.pdf (10 pages, 489461 bytes).
+Output written on main_document.pdf (12 pages, 517722 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
 
