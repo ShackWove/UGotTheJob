@@ -408,13 +408,13 @@ Esistono dei problemi di classificazione che possono essere risolti tramite l'ut
     \item \textbf{Naive Bayes}.
     \item \textbf{K-Nearest Neighbors}.
 \end{itemize}
-Ogni classificatore è stato analizzato attraverso l'uso di metriche di valutazione che sono servite anche per aiutarci sulla scelta del Modello da utilizzare. 
+Ogni classificatore è stato analizzato attraverso l'uso di metriche di valutazione che sono servite anche per aiutarci sulla scelta del Modello da utilizzare.
 Di seguito spiegheremo ogni modello e il suo obiettivo.
 
 \subsubsection{Decision Tree}
 Il Decision Tree (Albero Decisionale) è un modello di Machine Learning può essere utilizzato anche per problemi di  classificazione. In questo modello, l'algoritmo cosrtuisce un albero di decisione che rappresenta
 la sequenza di decisioni che devono essere prese per classificare correttamente un'istanza. L'obiettivo di questo algoritmo è quello di predire il valore di una variabile target, apprendendo semplici regole di decisione inferite dai dati di training.
-La particolarità di questi alberi è la loro facilità di lettura, grazie al quale è possibile comprendere la ragione con la quale è stata fatta una determinata predizione. 
+La particolarità di questi alberi è la loro facilità di lettura, grazie al quale è possibile comprendere la ragione con la quale è stata fatta una determinata predizione.
 
 \subsubsection{Random Forest}
 Il Random Forest è un modello di Machine Learning utilizzato per la classificazione e va a combinare molteplici alberi decisionali in un unico modello. In poche parole vengono costruiti questi alberi
@@ -430,52 +430,72 @@ rappresenta una variabile del problema.
 
 \subsubsection{Training set e Test set}
 Come si è potuto notare dai paragrafi precedenti, la preparazione dei dati è molto importante perché poi quest'ultimi dovranno essere utilizzati della fase di addestramento per il nostro modello. Una cosa importante che bisogna ricordarsi è che non si deve far allenare il Machine Leaner con
-l'intero dataset perché può portare a risultati totalmente inaffidabili. Per questo motivo bisogna dividere il dataset  in due insiemi: Training set e Test Test. Il Training set è un insieme di dati che il nostro algoritmo utilizzerà per l'addestramento, mentre il Test Set verrà utilizzato dall'algoritmo 
+l'intero dataset perché può portare a risultati totalmente inaffidabili. Per questo motivo bisogna dividere il dataset  in due insiemi: Training set e Test set. Il Training set è un insieme di dati che il nostro algoritmo utilizzerà per l'addestramento, mentre il Test Set verrà utilizzato dall'algoritmo
 addestrato per mettersi alla prova perché dovrù predire la classe di appartenenza di questi dati.
 Per il nostro modello abbiamo deciso di dividere il dataset in un buon 67 per il Training set e il restante 33 per il Test set.
 
-\subsubsection[Valutazione]
+\subsubsection{Valutazione}
 Da questo momento inizieremo a valutare i modelli precedentemente descritti per decidere quale utilizzare nel nostro progetto.
 Ovviamente avremo bisogno di qualche metrica da utilizzare per verificare le prestazioni del nostro modello nella fase di training. Di sotto sono elencate le metriche che andremo a utilizzare e valutare per ogni singolo modello:
 \begin{itemize}
-    \item \textbf{acuratezza}: 
-    \item \textbf{precisione}
-    \item \textbf{recall}
+    \item \textbf{Acuratezza}
+    \item \textbf{Precisione}
+    \item \textbf{Recall}
 \end{itemize}
+
 Elenchiamo adesso i vari modelli con i relativi valori delle metriche:
 \begin{itemize}
     \item \textbf{Decision Tree}
-    \begin{itemize}
-        \item \textbf{acuratezza}: 0.85
-        \item \textbf{precisione}: Placed:0.85, Not Placed: 0.84
-        \item \textbf{recall}: Placed:0.80, Not Placed: 0.89
-    \end{itemize}
+          \begin{itemize}
+              \item \textbf{acuratezza}: 0.85
+              \item \textbf{precisione}: Placed:0.85, Not Placed: 0.84
+              \item \textbf{recall}: Placed:0.80, Not Placed: 0.89
+          \end{itemize}
     \item \textbf{Random Forest}
-    \begin{itemize}
-        \item \textbf{acuratezza}: 0.87
-        \item \textbf{precisione}: Placed: 0.84, Not Placed: 0.89
-        \item \textbf{recall}: Placed: 0.86, Not Placed: 0.87
-    \end{itemize}
+          \begin{itemize}
+              \item \textbf{acuratezza}: 0.87
+              \item \textbf{precisione}: Placed: 0.84, Not Placed: 0.89
+              \item \textbf{recall}: Placed: 0.86, Not Placed: 0.87
+          \end{itemize}
     \item \textbf{Naive Bayes}
-    \begin{itemize}
-        \item \textbf{acuratezza}: 0.68
-        \item \textbf{precisione}: Placed: 0.64, Not Placed: 0.72
-        \item \textbf{recall}: Placed: 0.66, Not Placed: 0.70
-    \end{itemize}
+          \begin{itemize}
+              \item \textbf{acuratezza}: 0.68
+              \item \textbf{precisione}: Placed: 0.64, Not Placed: 0.72
+              \item \textbf{recall}: Placed: 0.66, Not Placed: 0.70
+          \end{itemize}
     \item \textbf{K-Nearest Neighbors}
-    \begin{itemize}
-        \item \textbf{acuratezza}: 0.82
-        \item \textbf{precisione}: Placed: 0.76, Not Placed: 0.88
-        \item \textbf{recall}: Placed: 0.78, Not Placed: 0.86
-    \end{itemize}
+          \begin{itemize}
+              \item \textbf{acuratezza}: 0.82
+              \item \textbf{precisione}: Placed: 0.76, Not Placed: 0.88
+              \item \textbf{recall}: Placed: 0.78, Not Placed: 0.86
+          \end{itemize}
 \end{itemize}
-Da questa analisi possiamo vedere che i modelli Decision Tree e Random Forest sono tra quelli più promettenti, con delle metriche abbastanza alze.
+Da questa analisi possiamo vedere che i modelli Decision Tree e Random Forest sono tra quelli più promettenti, con delle metriche abbastanza alte.
 La decisione del modello alla fine è ricaduta nel Random Forest, in quanto offriva dei valori piuttosto bilanciati rispetto al Decision Tree.
 \subsection{Evaluation}
-Questa è la fase in cui valuteremo i nostri risultati finali perché poi dovremo passare alla fase di Deployment. Da qui capiremo se i nostri obiettivi di business sono stati rispettati, se le nostre analisi sono state corrette e se il nostro progetto è consistente e solido
+Questa è la fase in cui valuteremo i nostri risultati finali perché poi dovremo passare alla fase di \textbf{Deployment}. Da qui capiremo se i nostri obiettivi di business sono stati rispettati, se le nostre analisi sono state corrette e se il nostro progetto è consistente e solido.
 Durante il nostro lavoro, abbiamo sempre avuto dubbi riguardo il raggiungimento del nostro obiettivo, siamo dovuti ritornare indietro nei nostri passi in certi casi per errori in fase di analisi o perché ci sono stati problemi in fase di modelling.
-Precedentemente avevamo pensato di renderlo utilizzabile per studenti italiani, però quando abbiamo verificato che non fosse fattibile per il dataset che avevamo deciso di utilizzare, siamo ritornati indietro rianalizzando i dati offerti e rifacendo la fase di Data Preparation.
-Oltrettutto la nostra preoccupazione era dovuta alla scelta di lasciare o meno una determinata feature (Gender), che per noi era trascurabile però che influenzava notevolmente la predizione del nostro Modello. Alla fine i risultati usciti sono soddisfacenti, coerenti e quanto più solidi possibili tanto da rendere possibile la fase di Deployment.
+Precedentemente avevamo pensato di renderlo utilizzabile per studenti italiani, però quando abbiamo verificato che ciò non poteva realizzarsi per il dataset che avevamo deciso di utilizzare, siamo ritornati indietro rianalizzando i dati offerti e rifacendo la fase di \textbf{Data Preparation}.
+Oltrettutto la nostra preoccupazione era dovuta alla scelta di lasciare o meno una determinata feature \textbf{(Gender)}, che per noi era trascurabile però influenzava notevolmente la predizione del nostro Modello. Alla fine i risultati usciti sono soddisfacenti, coerenti e quanto più solidi possibili tanto da rendere possibile la fase di \textbf{Deployment}.
 \subsection{Deployment}
-In questa fase parleremo di come abbiamo implementato il nostro modello di intelligenza Artificiale.
+In questa fase parleremo di come abbiamo implementato il nostro modello di \textbf{Intelligenza Artificiale}.
+Come precedentemente avevamo descritto nella fase di \textit{Business Understanding}, abbiamo utilizzato \textbf{Python} come linguaggio di programmazione del nostro modello che offriva una serie di librerie interessanti e utili per il nostro progetto come \textit{Pandas, Sklearn, Seaborn, RandomOverSampler, CustomTkinter} e altri moduli utili per i modelli che abbiamo testato.
+\par
+Per esempio abbiamo importato all'interno del nostro codice il modulo \textit{RandomForestClassifier}, che appunto sfruttava l'algoritmo Random Forest.
+Com'è possibile vedere dalla nostra pagina \textbf{GitHub} \textit{(ref. parag. 1.1 pg. 3)}, è stato  suddiviso il nostro programma in directory dov'è possibile vedere il codice sorgente suddiviso in due parti:
+\begin{enumerate}
+    \item \textbf{Business Logic}, che presenta la parte logica dell'applicativo e che integra il modello di Machine Learning.
+    \item \textbf{View}, che presenta la GUI del tool.
+\end{enumerate}
+Alla fine siamo riusciti a integrare il modello di Machine Learning nel modo più completo possibile e terminare il nostro Tool.
+
+\section{Conclusione}
+Il progetto si può dire concluso, dopo il tanto lavoro e impegno nella fase di modellazione del tool e del modello presentato.
+Un grande scalino, come descritto nella fase di \textit{Data Understanding} e un pò in tutto il documento è stato il discorso dell'\textbf{Etica},
+il tutto anche dovuto alla difficoltà nella fase di ricerca del/dei dataset, in questo questo caso unico, in quanto molti dataset non tornavano utili per il nostro
+progetto. Con questo però non si pregiudica in futuro la possibilità di aggiungere altri dati e rendere il modello ancora più efficace e veritiero possibile e che sia
+in futuro utilizzabile da più studenti di Nazioni diverse.
+\par
+In questa conclusione vogliamo ovviamente dire di essere enormemente soddisfatti del progetto che è stato creato e concluso, soprattutto per il nostro primo progetto che integra un modello di \textbf{Intelligenza Artificiale.}
+
 \end{document}
