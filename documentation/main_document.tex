@@ -49,7 +49,7 @@
     \vspace{0.5cm}
 
     \fontsize{17}{16}
-    \textbf{Artificial Intelligence DOCUMENT}
+    \textbf{Artificial Ciao Intelligence DOCUMENT}
 
     \textit{"Dipartimento di Informatica anno 2022/2023"}
 
@@ -408,10 +408,13 @@ Esistono dei problemi di classificazione che possono essere risolti tramite l'ut
     \item \textbf{Naive Bayes}.
     \item \textbf{K-Nearest Neighbors}.
 \end{itemize}
+Ogni classificatore è stato analizzato attraverso l'uso di metriche di valutazione che sono servite anche per aiutarci sulla scelta del Modello da utilizzare. 
+Di seguito spiegheremo ogni modello e il suo obiettivo.
 
 \subsubsection{Decision Tree}
-Il Decision Tree è un modello di Machine Learning utilizzato per la classificazione. In questo modello, l'algoritmo cosrtuisce un albero di decisione che rappresenta
-la sequenza di decisioni che devono essere prese per classificare correttamente un'istanza.
+Il Decision Tree (Albero Decisionale) è un modello di Machine Learning può essere utilizzato anche per problemi di  classificazione. In questo modello, l'algoritmo cosrtuisce un albero di decisione che rappresenta
+la sequenza di decisioni che devono essere prese per classificare correttamente un'istanza. L'obiettivo di questo algoritmo è quello di predire il valore di una variabile target, apprendendo semplici regole di decisione inferite dai dati di training.
+La particolarità di questi alberi è la loro facilità di lettura, grazie al quale è possibile comprendere la ragione con la quale è stata fatta una determinata predizione. 
 
 \subsubsection{Random Forest}
 Il Random Forest è un modello di Machine Learning utilizzato per la classificazione e va a combinare molteplici alberi decisionali in un unico modello. In poche parole vengono costruiti questi alberi
@@ -425,6 +428,49 @@ tramite l'applicazione del teorema di Bayes.
 Il K-Nearest Neighbors è un modello di Machine Learning utilizzato per la classificazione che va a rappresentare delle istanze di training come punti nello spazio multidimensionale, dove ogni dimensione
 rappresenta una variabile del problema.
 
+\subsubsection{Training set e Test set}
+Come si è potuto notare dai paragrafi precedenti, la preparazione dei dati è molto importante perché poi quest'ultimi dovranno essere utilizzati della fase di addestramento per il nostro modello. Una cosa importante che bisogna ricordarsi è che non si deve far allenare il Machine Leaner con
+l'intero dataset perché può portare a risultati totalmente inaffidabili. Per questo motivo bisogna dividere il dataset  in due insiemi: Training set e Test Test. Il Training set è un insieme di dati che il nostro algoritmo utilizzerà per l'addestramento, mentre il Test Set verrà utilizzato dall'algoritmo 
+addestrato per mettersi alla prova perché dovrù predire la classe di appartenenza di questi dati.
+Per il nostro modello abbiamo deciso di dividere il dataset in un buon 67 per il Training set e il restante 33 per il Test set.
+
+\subsubsection[Valutazione]
+Da questo momento inizieremo a valutare i modelli precedentemente descritti per decidere quale utilizzare nel nostro progetto.
+Ovviamente avremo bisogno di qualche metrica da utilizzare per verificare le prestazioni del nostro modello nella fase di training. Di sotto sono elencate le metriche che andremo a utilizzare e valutare per ogni singolo modello:
+\begin{itemize}
+    \item \textbf{acuratezza}: 
+    \item \textbf{precisione}
+    \item \textbf{recall}
+\end{itemize}
+Elenchiamo adesso i vari modelli con i relativi valori delle metriche:
+\begin{itemize}
+    \item \textbf{Decision Tree}
+    \begin{itemize}
+        \item \textbf{acuratezza}: 0.85
+        \item \textbf{precisione}: Placed:0.85, Not Placed: 0.84
+        \item \textbf{recall}: Placed:0.80, Not Placed: 0.89
+    \end{itemize}
+    \item \textbf{Random Forest}
+    \begin{itemize}
+        \item \textbf{acuratezza}: 0.87
+        \item \textbf{precisione}: Placed: 0.84, Not Placed: 0.89
+        \item \textbf{recall}: Placed: 0.86, Not Placed: 0.87
+    \end{itemize}
+    \item \textbf{Naive Bayes}
+    \begin{itemize}
+        \item \textbf{acuratezza}: 0.68
+        \item \textbf{precisione}: Placed: 0.64, Not Placed: 0.72
+        \item \textbf{recall}: Placed: 0.66, Not Placed: 0.70
+    \end{itemize}
+    \item \textbf{K-Nearest Neighbors}
+    \begin{itemize}
+        \item \textbf{acuratezza}: 0.82
+        \item \textbf{precisione}: Placed: 0.76, Not Placed: 0.88
+        \item \textbf{recall}: Placed: 0.78, Not Placed: 0.86
+    \end{itemize}
+\end{itemize}
+Da questa analisi possiamo vedere che i modelli Decision Tree e Random Forest sono tra quelli più promettenti, con delle metriche abbastanza alze.
+La decisione del modello alla fine è ricadurta nel Random Forest, in quanto offriva dei valori piuttosto bilanciati rispetto al Decision Tree.
 \subsection{Evaluation}
 
 \end{document}
