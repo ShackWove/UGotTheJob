@@ -385,7 +385,7 @@ class gui_ai(customtkinter.CTk):
         self.scan_frame = customtkinter.CTkFrame(self.main_frame, fg_color="transparent")
         self.scan_frame.grid(row=3, column=0, sticky="nsew", pady=10)
         
-        self.scan_button = customtkinter.CTkButton(master=self.scan_frame, text="Ricerca ", image=self.search_logo,
+        self.scan_button = customtkinter.CTkButton(master=self.scan_frame, text="Search ", image=self.search_logo,
                                                        compound="right", command=top_research,
                                                        font=customtkinter.CTkFont(size=30, weight="bold"))
         self.scan_button.grid(row=0, column=0, sticky="nsew", padx=250)
