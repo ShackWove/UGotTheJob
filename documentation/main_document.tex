@@ -89,7 +89,7 @@ per il lavoro dei propri sogni. Sarebbe utile avere un tool in grado di
 prevedere, attraverso dei dati, quantà probabilità hai di avere il lavoro.
 \par
 Il nostro team mira a combattere tutte queste ansie creando un tool chiamato \textbf{"\mainname"}
-che integrerà un modello di machine learning supervisionato che andrà a prevedere la possibità di essere piazzato.
+che integrerà un modello di machine learning supervisionato che andrà a prevedere la possibilità di essere piazzato.
 
 \subsection{Link Utili}
 \begin{enumerate}
@@ -177,7 +177,7 @@ prefissati.
 \end{itemize}
 
 \subsection{Data Understanding}
-Come già discusso nella \textit{Stima dei rischi (par.4.1 Business Understanding)} il problema da noi riscontrato è stata la poca imparzialità che l'agente potesse avere
+Come già discusso nella \textit{Stima dei rischi (parag. 4.1 Business Understanding)} il problema da noi riscontrato è stata la poca imparzialità che l'agente potesse avere
 con il dataset da noi utilizzato. Il dataset avendo un discreto bilanciamento dei dati relativi al gender \textit{(vedi Figure 1)}, avrebbe portato al nostro agente una poco
 corretta previsione del piazzamento di una persona, rischiando quindi di cadere in una discriminazione di tipo Etico/Morale di gender.
 \begin{figure}[ht]
@@ -204,7 +204,7 @@ Il dataset inoltre presenta dati, come voti o specializzazioni, che non sono ine
     \item \textbf{Undergrad Degree}: È un titolo di studio che gli studenti ottengono dopo aver completato un programma di studi Universitari. \par Ci sono tre valori: \textit{Sci\&Tech, Comm\&Mgmt e Others}.
     \item \textbf{Work Experience}: Questa variabile, banalmente, rappresenta se il sottoscritto ha avuto o meno esperienza lavorativa pregressa.
     \item \textbf{Employee Test \%}: Rappresenta la percentuale del test di idoneità per una posizione di lavoro effettuato presso l'azienda in cui il candidato ha fatto domanda.
-    \item \textbf{Specialization}: Rappresenta di che tipo di Specializzazione il candidato è in possesso. \par Questo dataset presenta 2 opzioni: \textit{Mkt\&Fin e Mkt\&HR}. Rispettivamente sono Mercato e Finanza e Mercato e Risorse Umane (Human Resource).
+    \item \textbf{Specialization}: Rappresenta di che tipo di Specializzazione il candidato è in possesso. \par Questo dataset presenta 2 opzioni: \textit{Mkt\&Fin e Mkt\&HR}. Rispettivamente sono \textit{Mercato e Finanza} e \textit{Mercato e Risorse Umane} (Human Resource).
     \item \textbf{MBA Percentage}: Indica la percentuale di punteggio calcolata come media di voti di tutto il percorso di studi post-Laurea che si concentra sull'Amministrazione aziendale e sulla Gestione.
     \item \textbf{Status}: Indica, banalmente, se il candidato è piazzato o meno.
 \end{itemize}
@@ -229,8 +229,7 @@ Il data preparation si articola nei seguenti quattro passaggi:
 \subsubsection{Data cleaning}
 Il \textit{Data Cleaning}, definito come \textit{"Pulizia dei dati"}, si occupa di rimediare a problemi quando ci sono righe
 di dati mancanti ma più in generale ha come obiettivo quello di fornire un dataset dotato di una qualità adeguata.
-Nel nostro dataset non sono presenti dati mancanti e di conseguenza non abbiamo effettuato la fase di \textit{Data Imputation}, che
-sui dati.
+Nel nostro dataset non sono presenti dati mancanti e di conseguenza non abbiamo effettuato la fase di \textit{Data Imputation}.
 
 \subsubsection{Feature scaling}
 Il \textit{Feature Scaling} è l'insieme di tecniche che consentono di normalizzare o scalare un insieme di valori di una caratteristica.
@@ -315,8 +314,8 @@ Da questa considerazione abbiamo deciso di rimuovere la variabile.
     \textit{Gender}
 \end{center}
 
-Come è evidente dal grafico la variabile \textit{Gender} influisce notevolmente nel dataset , talmente tanto che il numero di uomini piazzati è maggiore rispetto alle donne. Questo influenzerebbe il modello, portandolo anche a dare una previsione discriminatoria per un gender.
-Alla luce di questo abbiamo deciso di rimuovere la variabile \textit{Gender} così da rendere il modello quanto più imparziare possibile da un punto di vista etico.
+Come è evidente dal grafico la variabile \textit{Gender} influisce notevolmente nel dataset, tanto che il numero di uomini piazzati è maggiore rispetto alle donne. Questo influenzerebbe il modello, portandolo anche a dare una previsione discriminatoria per un gender.
+Alla luce di questo abbiamo deciso di rimuovere la variabile \textit{Gender} così da rendere il modello quanto più imparziare possibile da un punto di vista \textbf{Etico.}
 
 \begin{center}
 
@@ -397,7 +396,7 @@ Come abbiamo definito in precedenza utilizzeremo un modello di \textit{Machine L
 di classificazione.
 
 \subsubsection{Classificazione}
-La classificazione è una task in cui l'obbiettivo è predire il valore di una variabile categorica, chiama variabile
+La classificazione è una task in cui l'obbiettivo è predire il valore di una variabile categorica, chiamata variabile
 dipendente tramite l'utilizzo di un training set, ovvero un insieme di osservazioni per cui la variabile dipendente è nota.
 \par
 Esistono dei problemi di classificazione che possono essere risolti tramite l'utilizzo di un modello chiamato classificatore. Nel nostro caso abbiamo analizzato diversi modelli:
@@ -432,9 +431,9 @@ rappresenta una variabile del problema.
 Come si è potuto notare dai paragrafi precedenti, la preparazione dei dati è molto importante perché poi quest'ultimi dovranno essere utilizzati della fase di addestramento per il nostro modello. Una cosa importante che bisogna ricordarsi è che non si deve far allenare il Machine Leaner con
 l'intero dataset perché può portare a risultati totalmente inaffidabili. Per questo motivo bisogna dividere il dataset  in due insiemi: Training set e Test set. Il Training set è un insieme di dati che il nostro algoritmo utilizzerà per l'addestramento, mentre il Test Set verrà utilizzato dall'algoritmo
 addestrato per mettersi alla prova perché dovrù predire la classe di appartenenza di questi dati.
-Per il nostro modello abbiamo deciso di dividere il dataset in un buon 67 per il Training set e il restante 33 per il Test set.
+Per il nostro modello abbiamo deciso di dividere il dataset in un buon 67\% per il Training set e il restante 33\% per il Test set.
 
-\subsubsection{Valutazione}
+\subsubsection{Validation}
 Da questo momento inizieremo a valutare i modelli precedentemente descritti per decidere quale utilizzare nel nostro progetto.
 Ovviamente avremo bisogno di qualche metrica da utilizzare per verificare le prestazioni del nostro modello nella fase di training. Di sotto sono elencate le metriche che andremo a utilizzare e valutare per ogni singolo modello:
 \begin{itemize}
@@ -448,8 +447,8 @@ Elenchiamo adesso i vari modelli con i relativi valori delle metriche:
     \item \textbf{Decision Tree}
           \begin{itemize}
               \item \textbf{acuratezza}: 0.85
-              \item \textbf{precisione}: Placed:0.85, Not Placed: 0.84
-              \item \textbf{recall}: Placed:0.80, Not Placed: 0.89
+              \item \textbf{precisione}: Placed: 0.85, Not Placed: 0.84
+              \item \textbf{recall}: Placed: 0.80, Not Placed: 0.89
           \end{itemize}
     \item \textbf{Random Forest}
           \begin{itemize}
@@ -471,7 +470,7 @@ Elenchiamo adesso i vari modelli con i relativi valori delle metriche:
           \end{itemize}
 \end{itemize}
 Da questa analisi possiamo vedere che i modelli Decision Tree e Random Forest sono tra quelli più promettenti, con delle metriche abbastanza alte.
-La decisione del modello alla fine è ricaduta nel Random Forest, in quanto offriva dei valori piuttosto bilanciati rispetto al Decision Tree.
+La decisione del modello alla fine è ricaduta nel Random Forest, in quanto offriva dei valori piuttosto bilanciati e migliori rispetto al Decision Tree.
 \subsection{Evaluation}
 Questa è la fase in cui valuteremo i nostri risultati finali perché poi dovremo passare alla fase di \textbf{Deployment}. Da qui capiremo se i nostri obiettivi di business sono stati rispettati, se le nostre analisi sono state corrette e se il nostro progetto è consistente e solido.
 Durante il nostro lavoro, abbiamo sempre avuto dubbi riguardo il raggiungimento del nostro obiettivo, siamo dovuti ritornare indietro nei nostri passi in certi casi per errori in fase di analisi o perché ci sono stati problemi in fase di modelling.
@@ -479,7 +478,8 @@ Precedentemente avevamo pensato di renderlo utilizzabile per studenti italiani, 
 Oltrettutto la nostra preoccupazione era dovuta alla scelta di lasciare o meno una determinata feature \textbf{(Gender)}, che per noi era trascurabile però influenzava notevolmente la predizione del nostro Modello. Alla fine i risultati usciti sono soddisfacenti, coerenti e quanto più solidi possibili tanto da rendere possibile la fase di \textbf{Deployment}.
 \subsection{Deployment}
 In questa fase parleremo di come abbiamo implementato il nostro modello di \textbf{Intelligenza Artificiale}.
-Come precedentemente avevamo descritto nella fase di \textit{Business Understanding}, abbiamo utilizzato \textbf{Python} come linguaggio di programmazione del nostro modello che offriva una serie di librerie interessanti e utili per il nostro progetto come \textit{Pandas, Sklearn, Seaborn, RandomOverSampler, CustomTkinter} e altri moduli utili per i modelli che abbiamo testato.
+\par
+Come precedentemente avevamo descritto nella fase di \textit{Business Understanding}, abbiamo utilizzato \textbf{Python} come linguaggio di programmazione del nostro modello che offriva una serie di librerie interessanti e utili come \textit{Pandas, Sklearn, Seaborn, RandomOverSampler, CustomTkinter} e altri moduli utili per i modelli che abbiamo testato.
 \par
 Per esempio abbiamo importato all'interno del nostro codice il modulo \textit{RandomForestClassifier}, che appunto sfruttava l'algoritmo Random Forest.
 Com'è possibile vedere dalla nostra pagina \textbf{GitHub} \textit{(ref. parag. 1.1 pg. 3)}, è stato  suddiviso il nostro programma in directory dov'è possibile vedere il codice sorgente suddiviso in due parti:
