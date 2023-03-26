@@ -114,7 +114,7 @@ class gui_ai(customtkinter.CTk):
             var7 = self.button_subject_laurea.get()
                 
             var8_real = self.button_subject_work.get()
-            if var8_real == 'Si':
+            if var8_real == 'Yes':
                 var8_real = int(1)
             else:
                 var8_real = int(0)
@@ -150,7 +150,7 @@ class gui_ai(customtkinter.CTk):
             self.frame_resec.place(relx=0.5, rely=0.5, anchor="c")
             
             # label data
-            label_data = customtkinter.CTkLabel(self.frame_resec, text="Dati inseriti:", font=customtkinter.CTkFont(size=18, weight="bold"))
+            label_data = customtkinter.CTkLabel(self.frame_resec, text="Data:", font=customtkinter.CTkFont(size=18, weight="bold"))
             label_data.grid(row=0, sticky="nsw", pady=10)
             
             # dati inseriti frame
@@ -261,7 +261,7 @@ class gui_ai(customtkinter.CTk):
             print("\n\n")
             
             
-            if data_researched.startswith("Sarai preso"):
+            if data_researched.startswith("Placed"):
                 smile_label = customtkinter.CTkLabel(self.frame_resec, text=data_researched, image=self.smiley_face,
                                                      compound="top", font=bold_font)
                 smile_label.grid(row=2, sticky="nsew", padx=10, pady=10)
@@ -288,7 +288,7 @@ class gui_ai(customtkinter.CTk):
         self.ssc_percentage_frame = customtkinter.CTkFrame(self.center_frame, fg_color="transparent")
         self.ssc_percentage_frame.grid(row=0, column=0, sticky="nsew", padx=20)
         
-        self.label_ssc_percentage = customtkinter.CTkLabel(self.ssc_percentage_frame, text="Inserire Voto SSC: ", font=main_font)
+        self.label_ssc_percentage = customtkinter.CTkLabel(self.ssc_percentage_frame, text="Insert SSC vote: ", font=main_font)
         self.label_ssc_percentage.grid(row=0, column=0, pady=10, sticky="nsew")
         
         self.ssc_percentage = customtkinter.CTkEntry(master=self.ssc_percentage_frame, placeholder_text="0-100%", font=main_font)
@@ -298,7 +298,7 @@ class gui_ai(customtkinter.CTk):
         self.ssc_board_frame = customtkinter.CTkFrame(master=self.center_frame, fg_color="transparent")
         self.ssc_board_frame.grid(row=1, column=0, sticky="nsew", padx=20)
         
-        self.ssc_board_frame_label = customtkinter.CTkLabel(self.ssc_board_frame, text="Inserire una delle materie HSC: ", font=main_font)
+        self.ssc_board_frame_label = customtkinter.CTkLabel(self.ssc_board_frame, text="Insert SSC board: ", font=main_font)
         self.ssc_board_frame_label.grid(row=0, column=0, sticky="nsew", pady=10)
         
         self.ssc_var_subject = customtkinter.StringVar(value="Central")
@@ -309,7 +309,7 @@ class gui_ai(customtkinter.CTk):
         self.hsc_percentage_frame = customtkinter.CTkFrame(self.center_frame, fg_color="transparent")
         self.hsc_percentage_frame.grid(row=2, column=0, sticky="nsew", padx=20)
         
-        self.label_hsc_percentage = customtkinter.CTkLabel(self.hsc_percentage_frame, text="Inserire Voto HSC: ", font=main_font)
+        self.label_hsc_percentage = customtkinter.CTkLabel(self.hsc_percentage_frame, text="Insert HSC vote: ", font=main_font)
         self.label_hsc_percentage.grid(row=0, column=0, pady=10, sticky="nsew")
         
         self.hsc_percentage = customtkinter.CTkEntry(master=self.hsc_percentage_frame, placeholder_text="0-100%", font=main_font)
@@ -319,7 +319,7 @@ class gui_ai(customtkinter.CTk):
         self.hsc_board_frame = customtkinter.CTkFrame(master=self.center_frame, fg_color="transparent")
         self.hsc_board_frame.grid(row=3, column=0, sticky="nsew", padx=20)
         
-        self.hsc_board_frame_label = customtkinter.CTkLabel(self.hsc_board_frame, text="Inserire una delle materie HSC: ", font=main_font)
+        self.hsc_board_frame_label = customtkinter.CTkLabel(self.hsc_board_frame, text="Insert HSC board: ", font=main_font)
         self.hsc_board_frame_label.grid(row=0, column=0, sticky="nsew", pady=10)
         
         self.hsc_var_subject = customtkinter.StringVar(value="Central")
@@ -330,7 +330,7 @@ class gui_ai(customtkinter.CTk):
         self.subject_frame = customtkinter.CTkFrame(master=self.center_frame, fg_color="transparent")
         self.subject_frame.grid(row=4, column=0, sticky="nsew", padx=20)
         
-        self.subject_label = customtkinter.CTkLabel(self.subject_frame, text="Inserire una delle materie HSC: ", font=main_font)
+        self.subject_label = customtkinter.CTkLabel(self.subject_frame, text="Insert HSC subjects: ", font=main_font)
         self.subject_label.grid(row=0, column=0, sticky="nsew", pady=10)
         
         self.button_var_subject = customtkinter.StringVar(value="Commerce")
@@ -341,7 +341,7 @@ class gui_ai(customtkinter.CTk):
         self.degree_mark_frame = customtkinter.CTkFrame(master=self.center_frame, fg_color="transparent")
         self.degree_mark_frame.grid(row=5, column=0, sticky="nsew", padx=20)
         
-        self.degree_label = customtkinter.CTkLabel(self.degree_mark_frame, text="Inserire voto Degree: ", font=main_font)
+        self.degree_label = customtkinter.CTkLabel(self.degree_mark_frame, text="Insert Degree vote: ", font=main_font)
         self.degree_label.grid(row=0, column=0, pady=10, sticky="nsew")
         
         self.degree_entry = customtkinter.CTkEntry(master=self.degree_mark_frame, placeholder_text="0-100%", font=main_font)
@@ -351,7 +351,7 @@ class gui_ai(customtkinter.CTk):
         self.degree_object_frame = customtkinter.CTkFrame(master=self.center_frame, fg_color="transparent")
         self.degree_object_frame.grid(row=6, column=0, sticky="nsew", padx=20)
         
-        self.laurea_subject = customtkinter.CTkLabel(self.degree_object_frame, text="Inserire in cosa si è laureati: ", font=main_font)
+        self.laurea_subject = customtkinter.CTkLabel(self.degree_object_frame, text="Enter what you graduated in: ", font=main_font)
         self.laurea_subject.grid(row=0, column=0, sticky="nsew", pady=10)
         
         self.button_var_laurea = customtkinter.StringVar(value="Sci&tech")
@@ -362,18 +362,18 @@ class gui_ai(customtkinter.CTk):
         self.work_object_frame = customtkinter.CTkFrame(master=self.center_frame, fg_color="transparent")
         self.work_object_frame.grid(row=7, column=0, sticky="nsew", padx=20)
         
-        self.work_subject = customtkinter.CTkLabel(self.work_object_frame, text="Inserire si è lavorato in passato: ", font=main_font)
+        self.work_subject = customtkinter.CTkLabel(self.work_object_frame, text="Insert if you've worked in the past: ", font=main_font)
         self.work_subject.grid(row=0, column=0, sticky="nsew", pady=10)
         
-        self.button_var_work = customtkinter.StringVar(value="Si")
-        self.button_subject_work = customtkinter.CTkSegmentedButton(master=self.work_object_frame, values=["Si","No"], font=main_font, variable=self.button_var_work)
+        self.button_var_work = customtkinter.StringVar(value="Yes")
+        self.button_subject_work = customtkinter.CTkSegmentedButton(master=self.work_object_frame, values=["Yes","No"], font=main_font, variable=self.button_var_work)
         self.button_subject_work.grid(row=0, column=1, sticky="nsew", pady=10, padx=10)
         
         # specialistica
         self.specialization_object_frame = customtkinter.CTkFrame(master=self.center_frame, fg_color="transparent")
         self.specialization_object_frame.grid(row=8, column=0, sticky="nsew", padx=20)
         
-        self.specialization_subject = customtkinter.CTkLabel(self.specialization_object_frame, text="Inserire si è lavorato in passato: ", font=main_font)
+        self.specialization_subject = customtkinter.CTkLabel(self.specialization_object_frame, text="Insert Specialization: ", font=main_font)
         self.specialization_subject.grid(row=0, column=0, sticky="nsew", pady=10)
         
         self.button_var_specialization = customtkinter.StringVar(value="Mkt&HumanR")
