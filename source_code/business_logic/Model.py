@@ -10,7 +10,7 @@ class Model:
         prediction = self.dt.predict(dataframe)
         if prediction[0] == "Placed" :
             prob = self.dt.predict_proba(dataframe)[:, 1]
-            return "Sarai preso al " + str(prob[0] * 100) +"%"
+            return "Placed " + str(prob[0] * 100) +"%"
         else:
             prob = self.dt.predict_proba(dataframe)[:, 0]
-            return "Non sarai preso al " + str(prob[0] * 100)  + "%"
+            return "Not Placed " + str(prob[0] * 100)  + "%"
