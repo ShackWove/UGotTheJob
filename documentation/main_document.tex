@@ -438,11 +438,11 @@ Per il nostro modello abbiamo deciso di dividere il dataset in un buon 67 per il
 Da questo momento inizieremo a valutare i modelli precedentemente descritti per decidere quale utilizzare nel nostro progetto.
 Ovviamente avremo bisogno di qualche metrica da utilizzare per verificare le prestazioni del nostro modello nella fase di training. Di sotto sono elencate le metriche che andremo a utilizzare e valutare per ogni singolo modello:
 \begin{itemize}
-    \item \textbf{Acuratezza}
-    \item \textbf{Precisione}
-    \item \textbf{Recall}
+    \item \textbf{Acuratezza}: indica il numero totale di predizioni corrette, sia della classe positiva che negativa.\par \[\textit{Accuracy}=\frac{(TP + TN)}{(TP+TN+FP+FN)} \]
+    \item \textbf{Precisione}: indica il numero di predizioni corrette delle classe \textbf{True} rispetto tutte le predizioni fatte dal classificatore. In poche parole indica quanti errori ci saranno nella lista delle predizioni fatte dal classificatore.\par \[\textit{Precision}=\frac{(TP)}{(TP+FP)} \]
+    \item \textbf{Recall}: indica il numero di predizioni corrette per la classe \textbf{True} rispetto tutte le istanze positive di quella classe. In breve indica quante istanze positive nell'intero dataset il classificatore può determinare.\par \[\textit{Recall}=\frac{(TP)}{(TP+FN)} \]
 \end{itemize}
-
+Vogliamo massimizzare ognuno di questi valori nella loro interezza.
 Elenchiamo adesso i vari modelli con i relativi valori delle metriche:
 \begin{itemize}
     \item \textbf{Decision Tree}
