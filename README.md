@@ -5,10 +5,10 @@
 <!--<p align="center">
     <img src="https://media.discordapp.net/attachments/1059937011923959918/1082941666501087272/job_seeking.png?width=463&height=463"alt="GuessUJob" width="200" height="auto">
 </p> -->
-
+<!--
 _Source-img_
 [Link](https://www.flaticon.com/free-icon/job-seeking_1503438)
-
+-->
 _Repo metadata_
 
 
