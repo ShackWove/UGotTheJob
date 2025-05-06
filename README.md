@@ -2,9 +2,9 @@
   <h1><strong>UGotTheJob</strong></h1>
 </center>
 
-<p align="center">
+<!--<p align="center">
     <img src="https://media.discordapp.net/attachments/1059937011923959918/1082941666501087272/job_seeking.png?width=463&height=463"alt="GuessUJob" width="200" height="auto">
-</p>
+</p> -->
 
 _Source-img_
 [Link](https://www.flaticon.com/free-icon/job-seeking_1503438)
@@ -53,20 +53,20 @@ Possiamo paragonare il modello CRISP-DM ad un modello a cascata con feedback uti
 di sistemi software tradizionali. Presenta anche un modello non sequenziale in cui le diverse fasi possono essere
 eseguite un numero illimitato di volte. Tutto rappresentato nel grafico sottostante:
 
-<p align="center">
+<!--<p align="center">
     <img src="https://media.discordapp.net/attachments/1059937011923959918/1082962417274851338/CRISP-DM.png?width=465&height=466"alt="CRISP-DM" width="250" height="auto">
-</p>
-
+</p> -->
 ## Etica
 Proprio perchè la macchina viene addestrata attraverso dei dati, potrebbe imparare delle informazioni che non sono moralmente etiche nella società.
 
 Su questi dataset precisi, visti soprattutto nella [Documentazione](https://github.com/ShackWove/GuessUJob/tree/main/documentation), la macchina poteva imparare che percentuali diverse di gender differenti lavoravano o meno in totale o in specifiche campi.
 
+<!--
 <p align="center">
     <img src="https://media.discordapp.net/attachments/1059937011923959918/1082966037009539172/image.png"alt="CRISP-DM" width="250" height="auto">
-</p>
+</p>-->
 
-Come si può notare dall'immagine sovrastante la macchina in questo caso specifico riceveva dei dati dove gli uomini venivano presi di più a lavoro, quando semplicemente non c'erano pari dati tra uomini e donne. 
+In questo caso specifico riceveva dei dati dove gli uomini venivano presi di più a lavoro, quando semplicemente non c'erano pari dati tra uomini e donne. 
 
 Quindi per equiparare il tutto, e renderlo giusto solo sulla base di conoscenze e esperienze pregresse, abbiamo deciso di fare una macchina totalmente gender-free.
 
